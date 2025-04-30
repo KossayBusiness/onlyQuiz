@@ -1,0 +1,161 @@
+/* 
+  Optimisations mobiles pour NutriCert AI
+  Ce fichier contient des styles spécifiques pour améliorer l'expérience sur appareils mobiles
+*/
+
+/* Taille des touches et des éléments interactifs plus grande sur mobile */
+@media (max-width: 768px) {
+  /* Augmenter la taille des éléments interactifs */
+  button, 
+  .touch-target, 
+  .interactive-element, 
+  .checkbox-container,
+  .radio-container,
+  [role="button"],
+  [role="checkbox"],
+  [role="radio"],
+  [role="tab"],
+  label {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0.625rem;
+    touch-action: manipulation;
+  }
+  
+  /* Augmenter l'espacement entre les éléments pour éviter les clics accidentels */
+  .form-control,
+  .form-group,
+  .input-group,
+  .checkbox-group,
+  .radio-group {
+    margin-bottom: 1rem;
+  }
+  
+  /* Taille du texte plus grande pour la lisibilité */
+  body {
+    font-size: 16px;
+  }
+  
+  /* Empêcher le zoom sur iOS lors de la sélection d'entrées */
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="password"],
+  textarea,
+  select {
+    font-size: 16px; /* Prévient le zoom iOS */
+  }
+  
+  /* Améliorer les espaces de défilement */
+  .scrollable-container {
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+  }
+  
+  /* Assurer que les éléments sont visibles sans avoir à faire défiler horizontalement */
+  .content-container,
+  .card,
+  .panel {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Adapter la navigation pour les écrans plus petits */
+  .step-indicators {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  /* Amélioration de l'animation des transitions */
+  .mobile-transition {
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+  }
+  
+  /* Amélioration du contraste sur mobile */
+  .text-label,
+  .heading-mobile {
+    font-weight: 600;
+    color: #1a202c; /* Plus foncé pour meilleur contraste */
+  }
+  
+  /* Augmenter la taille des icônes pour meilleure visibilité */
+  .icon-mobile {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  /* Améliorer les éléments de formulaire */
+  .form-element-mobile {
+    border-radius: 0.5rem;
+    border-width: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Pour les appareils vraiment petits */
+@media (max-width: 375px) {
+  .xs-stack {
+    flex-direction: column !important;
+  }
+  
+  .xs-full-width {
+    width: 100% !important;
+  }
+  
+  .xs-center {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  
+  .xs-hidden {
+    display: none !important;
+  }
+  
+  .xs-text-sm {
+    font-size: 0.875rem !important;
+  }
+  
+  .xs-spacing {
+    margin-bottom: 0.75rem !important;
+  }
+}
+
+/* Optimisations pour les gestes tactiles */
+.touch-action-none {
+  touch-action: none;
+}
+
+.touch-manipulation {
+  touch-action: manipulation;
+}
+
+/* Amélioration des animations pour les performances sur mobile */
+@media (prefers-reduced-motion: no-preference) {
+  .animation-mobile {
+    transition-duration: 200ms;
+    will-change: transform, opacity;
+  }
+  
+  .animation-mobile-fast {
+    transition-duration: 150ms;
+  }
+  
+  .animation-mobile-slow {
+    transition-duration: 300ms;
+  }
+}
+
+/* Optimisations pour économiser la batterie */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

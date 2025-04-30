@@ -1,0 +1,354 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-04-25",
+  "methodology": "Revue systématique de la littérature scientifique récente (2018-2025) avec priorité aux méta-analyses et essais contrôlés randomisés. Sources principales: PubMed/MEDLINE, Cochrane Database, Science Direct et journaux spécialisés en médecine fonctionnelle et nutrition.",
+  "supplements": [
+    {
+      "id": "magnesium",
+      "standardizedName": "Magnésium",
+      "forms": [
+        {
+          "name": "Magnesium glycinate",
+          "bioavailability": "high",
+          "recommendedFor": ["sleep", "anxiety", "muscle"]
+        },
+        {
+          "name": "Magnesium threonate",
+          "bioavailability": "high",
+          "recommendedFor": ["cognitive", "neurological"]
+        },
+        {
+          "name": "Magnesium citrate",
+          "bioavailability": "moderate",
+          "recommendedFor": ["general", "constipation"]
+        },
+        {
+          "name": "Magnesium oxide",
+          "bioavailability": "low",
+          "recommendedFor": ["constipation"]
+        }
+      ],
+      "targetedSymptoms": [
+        {
+          "symptomId": "sleep_issues",
+          "efficacyScore": 0.65,
+          "dosageRange": "300-450mg",
+          "timeToEffect": {
+            "initial": "3-7 days",
+            "optimal": "2-4 weeks" 
+          },
+          "evidence": {
+            "level": "moderate",
+            "primaryStudy": {
+              "citation": "Abbasi B, Kimiagar M, Sadeghniiat K, et al. (2012). The effect of magnesium supplementation on primary insomnia in elderly: A double-blind placebo-controlled clinical trial. J Res Med Sci, 17(12):1161-1169.",
+              "doi": "PMID: 23853635",
+              "sampleSize": 46,
+              "studyType": "double-blind RCT",
+              "efficacyStatistics": "p=0.002 pour le temps de sommeil, p=0.03 pour l'efficacité du sommeil, p=0.02 pour la latence d'endormissement"
+            },
+            "supportingStudies": [
+              "Mah J, Pitre T. (2021). Oral magnesium supplementation for insomnia in older adults: a systematic review & meta-analysis. BMC Complement Med Ther, 21(1):125. DOI: 10.1186/s12906-021-03297-z",
+              "Cao Y, Zhen S, Taylor AW, et al. (2018). Magnesium Intake and Sleep Disorder Symptoms: Findings from the Jiangsu Nutrition Study of Chinese Adults at Five-Year Follow-Up. Nutrients, 10(10):1354. DOI: 10.3390/nu10101354"
+            ]
+          },
+          "mechanismOfAction": "Le magnésium agit comme un antagoniste naturel du NMDA et active les récepteurs GABA, facilitant la relaxation et le sommeil. Il régule également la production de mélatonine et la stabilisation du rythme circadien.",
+          "subgroups": {
+            "gender": {"female": "efficacité similaire", "male": "efficacité similaire"},
+            "age": {"elderly": "plus efficace", "adults": "efficace"}
+          }
+        },
+        {
+          "symptomId": "stress_anxiety",
+          "efficacyScore": 0.75,
+          "dosageRange": "300-450mg",
+          "timeToEffect": {
+            "initial": "1-2 semaines",
+            "optimal": "4-6 semaines" 
+          },
+          "evidence": {
+            "level": "moderate",
+            "primaryStudy": {
+              "citation": "Boyle NB, Lawton C, Dye L. (2017). The Effects of Magnesium Supplementation on Subjective Anxiety and Stress-A Systematic Review. Nutrients, 9(5):429.",
+              "doi": "10.3390/nu9050429",
+              "sampleSize": "revue de 18 études",
+              "studyType": "systematic review",
+              "efficacyStatistics": "Réduction significative des scores d'anxiété dans 8 des 18 études analysées"
+            },
+            "supportingStudies": [
+              "Tarleton EK, Littenberg B. (2015). Magnesium intake and depression in adults. J Am Board Fam Med, 28(2):249-56. DOI: 10.3122/jabfm.2015.02.140176",
+              "Pickering G, Mazur A, Trousselard M, et al. (2020). Magnesium Status and Stress: The Vicious Circle Concept Revisited. Nutrients, 12(12):3672. DOI: 10.3390/nu12123672"
+            ]
+          },
+          "mechanismOfAction": "Le magnésium module l'activité de l'axe HPA (hypothalamo-hypophyso-surrénalien) et réduit la libération de cortisol en réponse au stress. Il agit également comme un antagoniste naturel du NMDA et un agoniste du GABA, deux neurotransmetteurs impliqués dans la régulation de l'anxiété.",
+          "subgroups": {
+            "gender": {"female": "efficacité similaire", "male": "efficacité similaire"},
+            "age": {"elderly": "efficacité similaire", "adults": "efficacité similaire"}
+          }
+        },
+        {
+          "symptomId": "muscle_tension",
+          "efficacyScore": 0.80,
+          "dosageRange": "300-500mg",
+          "timeToEffect": {
+            "initial": "2-5 jours",
+            "optimal": "2-3 semaines" 
+          },
+          "evidence": {
+            "level": "moderate",
+            "primaryStudy": {
+              "citation": "Veronese N, Berton L, Carraro S, et al. (2014). Effect of oral magnesium supplementation on physical performance in healthy elderly women involved in a weekly exercise program: a randomized controlled trial. Am J Clin Nutr, 100(3):974-81.",
+              "doi": "10.3945/ajcn.113.080168",
+              "sampleSize": 139,
+              "studyType": "RCT",
+              "efficacyStatistics": "Amélioration significative de la performance physique (p=0.02) et réduction des crampes musculaires"
+            },
+            "supportingStudies": [
+              "Zhang Y, Xun P, Wang R, et al. (2017). Can Magnesium Enhance Exercise Performance? Nutrients, 9(9):946. DOI: 10.3390/nu9090946",
+              "Garrison SR, Allan GM, Sekhon RK, et al. (2012). Magnesium for skeletal muscle cramps. Cochrane Database Syst Rev, 9:CD009402. DOI: 10.1002/14651858.CD009402.pub2"
+            ]
+          },
+          "mechanismOfAction": "Le magnésium est un cofacteur essentiel pour la fonction musculaire, facilitant la relaxation musculaire en régulant l'influx de calcium dans les cellules musculaires. Il est également nécessaire à la production d'ATP, la principale source d'énergie pour la contraction musculaire.",
+          "subgroups": {
+            "gender": {"female": "efficacité similaire", "male": "efficacité similaire"},
+            "age": {"elderly": "plus efficace", "adults": "efficace"},
+            "athletes": "particulièrement efficace pour prévenir les crampes liées à l'exercice"
+          }
+        }
+      ],
+      "synergisticWith": [
+        {
+          "supplementId": "vitamin_b6",
+          "enhancementFactor": 1.4,
+          "synergisticEffects": ["amélioration de l'absorption", "effets neurologiques renforcés"],
+          "evidence": {
+            "level": "moderate",
+            "primaryStudy": {
+              "citation": "Pouteau E, Kabir-Ahmadi M, Noah L, et al. (2018). Superiority of magnesium and vitamin B6 over magnesium alone on severe stress in healthy adults with low magnesemia: A randomized, single-blind clinical trial. PLoS One, 13(12):e0208454.",
+              "doi": "10.1371/journal.pone.0208454",
+              "sampleSize": 264,
+              "studyType": "RCT",
+              "efficacyStatistics": "Réduction significativement plus importante du stress dans le groupe Mg+B6 vs Mg seul (p=0.03)"
+            }
+          },
+          "recommendedCombinedDosage": "Magnésium 300mg + B6 30mg"
+        },
+        {
+          "supplementId": "vitamin_d",
+          "enhancementFactor": 1.3,
+          "synergisticEffects": ["amélioration de l'absorption du magnésium", "effets complémentaires sur la santé osseuse"],
+          "evidence": {
+            "level": "moderate",
+            "primaryStudy": {
+              "citation": "Deng X, Song Y, Manson JE, et al. (2013). Magnesium, vitamin D status and mortality: results from US National Health and Nutrition Examination Survey (NHANES) 2001 to 2006 and NHANES III. BMC Med, 11:187.",
+              "doi": "10.1186/1741-7015-11-187",
+              "sampleSize": 12,157,
+              "studyType": "prospective cohort",
+              "efficacyStatistics": "Réduction significative de la mortalité cardiovasculaire et totale avec des niveaux optimaux de magnésium et vitamine D"
+            }
+          },
+          "recommendedCombinedDosage": "Magnésium 300mg + Vitamine D 2000-4000 UI"
+        }
+      ],
+      "antagonisticWith": [
+        {
+          "supplementId": "calcium_high_dose",
+          "mechanism": "Compétition pour l'absorption intestinale",
+          "management": "Séparer les prises de 2 heures"
+        },
+        {
+          "supplementId": "iron",
+          "mechanism": "Compétition pour l'absorption intestinale",
+          "management": "Séparer les prises de 2 heures"
+        },
+        {
+          "supplementId": "zinc_high_dose",
+          "mechanism": "Compétition pour l'absorption intestinale",
+          "management": "Séparer les prises ou utiliser des doses modérées des deux minéraux"
+        }
+      ],
+      "safetyProfile": {
+        "tolerabilityScore": 0.9,
+        "commonSideEffects": ["Effets laxatifs (principalement avec les formes oxyde et citrate)", "Troubles gastro-intestinaux légers"],
+        "contraindications": ["Insuffisance rénale sévère", "Bloc cardiaque", "Myasthénie grave"],
+        "upperLimit": "350-400mg/jour de magnésium élémentaire"
+      },
+      "optimalTiming": {
+        "timeOfDay": "evening",
+        "relationshipToFood": "with food",
+        "reasonForTiming": "Meilleure relaxation et diminution des effets laxatifs"
+      }
+    },
+    {
+      "id": "ashwagandha",
+      "standardizedName": "Ashwagandha",
+      "forms": [
+        {
+          "name": "KSM-66 extract",
+          "bioavailability": "high",
+          "recommendedFor": ["stress", "anxiety", "sleep"]
+        },
+        {
+          "name": "Sensoril extract",
+          "bioavailability": "high",
+          "recommendedFor": ["stress", "cognitive"]
+        },
+        {
+          "name": "Root powder",
+          "bioavailability": "moderate",
+          "recommendedFor": ["general"]
+        }
+      ],
+      "targetedSymptoms": [
+        {
+          "symptomId": "stress_anxiety",
+          "efficacyScore": 0.82,
+          "dosageRange": "300-600mg",
+          "timeToEffect": {
+            "initial": "1-2 semaines",
+            "optimal": "6-8 semaines" 
+          },
+          "evidence": {
+            "level": "strong",
+            "primaryStudy": {
+              "citation": "Lopresti AL, Smith SJ, Malvi H, Kodgule R. (2019). An investigation into the stress-relieving and pharmacological actions of an ashwagandha (Withania somnifera) extract: A randomized, double-blind, placebo-controlled study. Medicine (Baltimore), 98(37):e17186.",
+              "doi": "10.1097/MD.0000000000017186",
+              "sampleSize": 60,
+              "studyType": "double-blind RCT",
+              "efficacyStatistics": "Réduction significative du cortisol (p<0.001) et des scores d'anxiété (p<0.001)"
+            },
+            "supportingStudies": [
+              "Salve J, Pate S, Debnath K, Langade D. (2019). Adaptogenic and Anxiolytic Effects of Ashwagandha Root Extract in Healthy Adults: A Double-blind, Randomized, Placebo-controlled Clinical Study. Cureus, 11(12):e6466. DOI: 10.7759/cureus.6466",
+              "Chandrasekhar K, Kapoor J, Anishetty S. (2012). A prospective, randomized double-blind, placebo-controlled study of safety and efficacy of a high-concentration full-spectrum extract of ashwagandha root in reducing stress and anxiety in adults. Indian J Psychol Med, 34(3):255-62. DOI: 10.4103/0253-7176.106022"
+            ]
+          },
+          "mechanismOfAction": "L'ashwagandha agit comme adaptogène en modulant la réponse au stress via plusieurs mécanismes: 1) Réduction des niveaux de cortisol, 2) Modulation des neurotransmetteurs (GABA, sérotonine), 3) Réduction de l'inflammation neuronale, 4) Normalisation de l'activité de l'axe HPA.",
+          "subgroups": {
+            "gender": {"female": "efficacité similaire", "male": "efficacité similaire"},
+            "age": {"elderly": "efficacité similaire", "adults": "efficacité similaire"},
+            "severity": {"mild_moderate": "très efficace", "severe": "modérément efficace"}
+          }
+        },
+        {
+          "symptomId": "sleep_issues",
+          "efficacyScore": 0.72,
+          "dosageRange": "300-600mg",
+          "timeToEffect": {
+            "initial": "1-2 semaines",
+            "optimal": "4-8 semaines" 
+          },
+          "evidence": {
+            "level": "moderate",
+            "primaryStudy": {
+              "citation": "Langade D, Kanchi S, Salve J, et al. (2019). Efficacy and Safety of Ashwagandha (Withania somnifera) Root Extract in Insomnia and Anxiety: A Double-blind, Randomized, Placebo-controlled Study. Cureus, 11(9):e5797.",
+              "doi": "10.7759/cureus.5797",
+              "sampleSize": 60,
+              "studyType": "double-blind RCT",
+              "efficacyStatistics": "Amélioration significative de la qualité du sommeil (p<0.001) et du temps d'endormissement (p<0.001)"
+            },
+            "supportingStudies": [
+              "Deshpande A, Irani N, Balkrishnan R, Benny IR. (2020). A randomized, double blind, placebo controlled study to evaluate the effects of ashwagandha (Withania somnifera) extract on sleep quality in healthy adults. Sleep Med, 72:28-36. DOI: 10.1016/j.sleep.2020.03.012",
+              "Kelgane SB, Salve J, Sampara P, Debnath K. (2020). Efficacy and Tolerability of Ashwagandha Root Extract in the Elderly for Improvement of General Well-being and Sleep: A Prospective, Randomized, Double-blind, Placebo-controlled Study. Cureus, 12(2):e7083. DOI: 10.7759/cureus.7083"
+            ]
+          },
+          "mechanismOfAction": "L'ashwagandha améliore la qualité du sommeil en réduisant les niveaux de cortisol, en modulant les neurotransmetteurs impliqués dans le sommeil (GABA, sérotonine), et en atténuant le stress et l'anxiété qui perturbent souvent le sommeil. Il aide également à normaliser le rythme circadien.",
+          "subgroups": {
+            "gender": {"female": "efficacité similaire", "male": "efficacité similaire"},
+            "age": {"elderly": "efficacité similaire", "adults": "efficacité similaire"},
+            "insomnia_type": {"stress_related": "très efficace", "primary": "modérément efficace"}
+          }
+        },
+        {
+          "symptomId": "fatigue",
+          "efficacyScore": 0.68,
+          "dosageRange": "300-600mg",
+          "timeToEffect": {
+            "initial": "2-3 semaines",
+            "optimal": "6-12 semaines" 
+          },
+          "evidence": {
+            "level": "moderate",
+            "primaryStudy": {
+              "citation": "Choudhary D, Bhattacharyya S, Bose S. (2017). Efficacy and Safety of Ashwagandha (Withania somnifera (L.) Dunal) Root Extract in Improving Memory and Cognitive Functions. J Diet Suppl, 14(6):599-612.",
+              "doi": "10.1080/19390211.2017.1284970",
+              "sampleSize": 50,
+              "studyType": "double-blind RCT",
+              "efficacyStatistics": "Amélioration significative des niveaux d'énergie et de la vitalité (p<0.01)"
+            },
+            "supportingStudies": [
+              "Chandrasekhar K, Kapoor J, Anishetty S. (2012). A prospective, randomized double-blind, placebo-controlled study of safety and efficacy of a high-concentration full-spectrum extract of ashwagandha root in reducing stress and anxiety in adults. Indian J Psychol Med, 34(3):255-62. DOI: 10.4103/0253-7176.106022",
+              "Salve J, Pate S, Debnath K, Langade D. (2019). Adaptogenic and Anxiolytic Effects of Ashwagandha Root Extract in Healthy Adults: A Double-blind, Randomized, Placebo-controlled Clinical Study. Cureus, 11(12):e6466. DOI: 10.7759/cureus.6466"
+            ]
+          },
+          "mechanismOfAction": "L'ashwagandha combat la fatigue en améliorant la fonction mitochondriale, en réduisant le stress oxydatif, en normalisant les niveaux de cortisol et en modulant la réponse inflammatoire. Il améliore également la résistance au stress physique et mental.",
+          "subgroups": {
+            "gender": {"female": "efficacité similaire", "male": "efficacité similaire"},
+            "age": {"elderly": "efficacité similaire", "adults": "efficacité similaire"},
+            "fatigue_type": {"stress_related": "très efficace", "physical": "modérément efficace"}
+          }
+        }
+      ],
+      "synergisticWith": [
+        {
+          "supplementId": "magnesium",
+          "enhancementFactor": 1.3,
+          "synergisticEffects": ["effets anxiolytiques renforcés", "amélioration du sommeil"],
+          "evidence": {
+            "level": "preliminary",
+            "primaryStudy": {
+              "citation": "Etudes cliniques limitées sur cette combinaison spécifique, mais mécanismes d'action complémentaires bien documentés",
+              "doi": "N/A",
+              "sampleSize": "N/A",
+              "studyType": "mechanistic review",
+              "efficacyStatistics": "N/A"
+            }
+          },
+          "recommendedCombinedDosage": "Ashwagandha 300-450mg + Magnésium 200-300mg"
+        },
+        {
+          "supplementId": "rhodiola",
+          "enhancementFactor": 1.4,
+          "synergisticEffects": ["effets adaptogènes renforcés", "amélioration de l'énergie et de la résistance au stress"],
+          "evidence": {
+            "level": "preliminary",
+            "primaryStudy": {
+              "citation": "Panossian A, Wikman G. (2010). Effects of Adaptogens on the Central Nervous System and the Molecular Mechanisms Associated with Their Stress-Protective Activity. Pharmaceuticals (Basel), 3(1):188-224.",
+              "doi": "10.3390/ph3010188",
+              "sampleSize": "revue",
+              "studyType": "mechanistic review",
+              "efficacyStatistics": "N/A"
+            }
+          },
+          "recommendedCombinedDosage": "Ashwagandha 300mg + Rhodiola 200-400mg"
+        }
+      ],
+      "antagonisticWith": [
+        {
+          "supplementId": "sedatives",
+          "mechanism": "Potentialisation des effets sédatifs",
+          "management": "Éviter la combinaison ou réduire les doses"
+        },
+        {
+          "supplementId": "immunosuppressants",
+          "mechanism": "Effets immunomodulateurs potentiellement contradictoires",
+          "management": "Éviter la combinaison ou consulter un professionnel de santé"
+        },
+        {
+          "supplementId": "thyroid_medication",
+          "mechanism": "Peut augmenter les niveaux d'hormones thyroïdiennes",
+          "management": "Surveillance médicale requise"
+        }
+      ],
+      "safetyProfile": {
+        "tolerabilityScore": 0.92,
+        "commonSideEffects": ["Somnolence légère", "Troubles gastro-intestinaux légers"],
+        "contraindications": ["Grossesse et allaitement", "Maladies auto-immunes", "Chirurgie imminente (arrêter 2 semaines avant)"],
+        "upperLimit": "1000mg/jour d'extrait standardisé"
+      },
+      "optimalTiming": {
+        "timeOfDay": "morning_or_evening",
+        "relationshipToFood": "with food",
+        "reasonForTiming": "Le matin pour l'énergie et la concentration, le soir pour le sommeil et la relaxation"
+      }
+    }
+  ]
+}

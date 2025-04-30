@@ -1,0 +1,154 @@
+{
+  "optimalQuestions": [
+    {
+      "id": "symptoms_primary",
+      "question": "Parmi les symptômes suivants, lesquels ressentez-vous régulièrement ?",
+      "type": "multiple_choice",
+      "options": [
+        "fatigue",
+        "troubles_du_sommeil",
+        "stress_anxiete",
+        "problemes_digestifs",
+        "douleurs_articulaires",
+        "problemes_de_peau",
+        "maux_de_tete",
+        "variations_humeur"
+      ],
+      "predictivePower": 0.45,
+      "conditionalFollowUp": true
+    },
+    {
+      "id": "symptom_intensity",
+      "question": "Pour le symptôme principal sélectionné, quelle est son intensité et quand se manifeste-t-il principalement ?",
+      "type": "combined",
+      "options": {
+        "intensity": ["legere", "moderee", "severe"],
+        "timing": ["matin", "soir", "apres_repas", "periode_stress"]
+      },
+      "predictivePower": 0.35,
+      "conditionalFollowUp": true
+    },
+    {
+      "id": "diet_habits",
+      "question": "Comment décririez-vous votre alimentation habituelle ?",
+      "type": "single_choice",
+      "options": [
+        "riche_fruits_legumes",
+        "riche_proteines_animales",
+        "riche_cereales_completes",
+        "riche_aliments_transformes",
+        "regime_mediterraneen",
+        "regime_vegetarien_vegan",
+        "regime_pauvre_glucides"
+      ],
+      "predictivePower": 0.40,
+      "conditionalFollowUp": false
+    },
+    {
+      "id": "sun_exposure",
+      "question": "Combien de temps passez-vous en extérieur au soleil chaque jour en moyenne ?",
+      "type": "single_choice",
+      "options": [
+        "moins_15_minutes",
+        "15_30_minutes",
+        "30_60_minutes",
+        "plus_1_heure"
+      ],
+      "predictivePower": 0.30,
+      "conditionalFollowUp": false
+    },
+    {
+      "id": "stress_level",
+      "question": "Comment évalueriez-vous votre niveau de stress quotidien et votre capacité à le gérer ?",
+      "type": "single_choice",
+      "options": [
+        "stress_faible_bonne_gestion",
+        "stress_modere_gestion_variable",
+        "stress_eleve_difficulte_gestion",
+        "stress_tres_eleve_debordement"
+      ],
+      "predictivePower": 0.38,
+      "conditionalFollowUp": true
+    },
+    {
+      "id": "sleep_quality",
+      "question": "Comment évalueriez-vous la qualité de votre sommeil ?",
+      "type": "single_choice",
+      "options": [
+        "excellente",
+        "bonne",
+        "moyenne",
+        "mauvaise"
+      ],
+      "predictivePower": 0.42,
+      "conditionalFollowUp": true
+    },
+    {
+      "id": "health_goals",
+      "question": "Quels sont vos principaux objectifs de santé ? (Sélectionnez jusqu'à 3)",
+      "type": "multiple_choice_limited",
+      "options": [
+        "plus_energie",
+        "meilleur_sommeil",
+        "reduction_stress",
+        "amelioration_digestion",
+        "reduction_douleurs",
+        "amelioration_immunite",
+        "amelioration_concentration",
+        "equilibre_emotionnel"
+      ],
+      "maxSelections": 3,
+      "predictivePower": 0.35,
+      "conditionalFollowUp": false
+    }
+  ],
+  "conditionalQuestions": [
+    {
+      "id": "digestive_details",
+      "parentQuestionId": "symptoms_primary",
+      "triggerValue": "problemes_digestifs",
+      "question": "Quels types de problèmes digestifs rencontrez-vous principalement ?",
+      "type": "multiple_choice",
+      "options": [
+        "ballonnements",
+        "constipation",
+        "diarrhee",
+        "reflux_acide",
+        "douleurs_abdominales",
+        "nausees"
+      ],
+      "predictivePower": 0.32
+    },
+    {
+      "id": "stress_management",
+      "parentQuestionId": "stress_level",
+      "triggerValues": ["stress_eleve_difficulte_gestion", "stress_tres_eleve_debordement"],
+      "question": "Quelles techniques de gestion du stress utilisez-vous actuellement ?",
+      "type": "multiple_choice",
+      "options": [
+        "meditation_pleine_conscience",
+        "exercice_physique",
+        "respiration_profonde",
+        "yoga",
+        "therapie",
+        "aucune"
+      ],
+      "predictivePower": 0.28
+    },
+    {
+      "id": "sleep_issues_details",
+      "parentQuestionId": "sleep_quality",
+      "triggerValues": ["moyenne", "mauvaise"],
+      "question": "Quel type de troubles du sommeil rencontrez-vous principalement ?",
+      "type": "multiple_choice",
+      "options": [
+        "difficulte_endormissement",
+        "reveils_nocturnes",
+        "reveil_precoce",
+        "sommeil_non_reparateur",
+        "cauchemars_frequents"
+      ],
+      "predictivePower": 0.30
+    }
+  ]
+}

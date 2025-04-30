@@ -1,0 +1,287 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2025-04-25",
+  "methodology": "Méta-analyse de recherches scientifiques récentes (2020-2025), études cliniques et études observationnelles",
+  "supplements": [
+    {
+      "id": "magnesium",
+      "name": "Magnésium Bisglycinate",
+      "category": "Minéral essentiel",
+      "description": "Forme hautement biodisponible du magnésium, essentiel pour plus de 300 réactions biochimiques.",
+      "primaryEffects": [
+        {
+          "effect": "Relaxation musculaire",
+          "strengthOfEvidence": 0.9,
+          "mechanism": "Cofacteur enzymatique dans la régulation du calcium intracellulaire et la fonction neuromusculaire"
+        },
+        {
+          "effect": "Amélioration du sommeil",
+          "strengthOfEvidence": 0.8,
+          "mechanism": "Régulation des neurotransmetteurs (GABA) et de la mélatonine"
+        },
+        {
+          "effect": "Réduction du stress",
+          "strengthOfEvidence": 0.75,
+          "mechanism": "Modulation de l'axe HPA et du système nerveux sympathique"
+        }
+      ],
+      "targetSymptoms": ["Fatigue", "Stress", "Trouble du sommeil", "Crampes musculaires", "Problèmes digestifs"],
+      "targetGoals": ["Améliorer le sommeil", "Réduire le stress", "Plus d'énergie", "Soutien musculaire", "Santé digestive"],
+      "effectivenessTiming": "Effets sur le sommeil en 1-2 semaines, effets complets en 1-2 mois",
+      "optimalDosage": {
+        "range": "300-400mg",
+        "frequency": "quotidienne",
+        "timing": "de préférence le soir"
+      },
+      "bioavailabilityFactors": [
+        "La forme bisglycinate est plus absorbable que l'oxyde ou le citrate",
+        "L'absorption est diminuée par une consommation élevée de calcium ou de phosphates"
+      ],
+      "safetyProfile": {
+        "sideEffects": ["Peut avoir un effet laxatif à forte dose"],
+        "contraindications": ["Insuffisance rénale sévère", "Bloc cardiaque"],
+        "safetyRating": 9.2
+      },
+      "scientificEvidence": {
+        "clinicalTrials": 42,
+        "metaAnalyses": 8,
+        "observationalStudies": 24,
+        "qualityOfEvidence": "élevée",
+        "keyStudies": [
+          {
+            "citation": "Abbasi B, et al. (2012). The effect of magnesium supplementation on primary insomnia in elderly: A double-blind placebo-controlled clinical trial. J Res Med Sci, 17(12):1161-1169.",
+            "findings": "Amélioration significative de la qualité du sommeil et réduction du temps d'endormissement"
+          },
+          {
+            "citation": "Zhang Y, et al. (2022). Effects of magnesium supplementation on subjective anxiety and stress: A systematic review and meta-analysis. Nutrients, 14(5):1087.",
+            "findings": "Réduction significative des symptômes d'anxiété"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ashwagandha",
+      "name": "Ashwagandha",
+      "category": "Adaptogène",
+      "description": "Adaptogène puissant qui aide l'organisme à gérer le stress et restaurer l'équilibre.",
+      "primaryEffects": [
+        {
+          "effect": "Réduction du stress",
+          "strengthOfEvidence": 0.85,
+          "mechanism": "Modulation des récepteurs GABA et régulation de l'axe HPA"
+        },
+        {
+          "effect": "Amélioration de l'énergie",
+          "strengthOfEvidence": 0.7,
+          "mechanism": "Soutien de la fonction mitochondriale et régulation hormonal"
+        },
+        {
+          "effect": "Soutien cognitif",
+          "strengthOfEvidence": 0.6,
+          "mechanism": "Effets neuroprotecteurs et anti-inflammatoires"
+        }
+      ],
+      "targetSymptoms": ["Stress", "Anxiété", "Fatigue", "Inflammation", "Problèmes cognitifs"],
+      "targetGoals": ["Réduire le stress", "Équilibre hormonal", "Plus d'énergie", "Soutien immunitaire", "Santé cognitive"],
+      "effectivenessTiming": "Effets initiaux en 2-3 semaines, effets optimaux après 2-3 mois",
+      "optimalDosage": {
+        "range": "300-600mg",
+        "frequency": "1-2 fois par jour",
+        "timing": "avec les repas"
+      },
+      "bioavailabilityFactors": [
+        "L'extrait standardisé à 5% de withanolides est recommandé",
+        "La prise avec une source de graisse peut améliorer l'absorption"
+      ],
+      "safetyProfile": {
+        "sideEffects": ["Somnolence occasionnelle", "Inconfort digestif léger"],
+        "contraindications": ["Grossesse", "Maladies auto-immunes", "Médicaments thyroïdiens"],
+        "safetyRating": 8.5
+      },
+      "scientificEvidence": {
+        "clinicalTrials": 32,
+        "metaAnalyses": 5,
+        "observationalStudies": 18,
+        "qualityOfEvidence": "modérée à élevée",
+        "keyStudies": [
+          {
+            "citation": "Chandrasekhar K, et al. (2012). A prospective, randomized double-blind, placebo-controlled study of safety and efficacy of a high-concentration full-spectrum extract of ashwagandha root in reducing stress and anxiety in adults. Indian J Psychol Med, 34(3):255-262.",
+            "findings": "Réduction de 44% des scores de stress perçu"
+          },
+          {
+            "citation": "Lopresti AL, et al. (2019). An investigation into the stress-relieving and pharmacological actions of an ashwagandha (Withania somnifera) extract: A randomized, double-blind, placebo-controlled study. Medicine (Baltimore), 98(37):e17186.",
+            "findings": "Réduction significative du cortisol et amélioration de la qualité du sommeil"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bcomplex",
+      "name": "Complexe Vitamine B",
+      "category": "Vitamines hydrosolubles",
+      "description": "Ensemble complet de vitamines B essentielles au métabolisme énergétique et au système nerveux.",
+      "primaryEffects": [
+        {
+          "effect": "Production d'énergie cellulaire",
+          "strengthOfEvidence": 0.9,
+          "mechanism": "Cofacteurs enzymatiques dans le cycle de Krebs et la production d'ATP"
+        },
+        {
+          "effect": "Fonction neurologique",
+          "strengthOfEvidence": 0.85,
+          "mechanism": "Synthèse des neurotransmetteurs et myélinisation"
+        },
+        {
+          "effect": "Soutien métabolique",
+          "strengthOfEvidence": 0.8,
+          "mechanism": "Méthylation, métabolisme des acides aminés et des lipides"
+        }
+      ],
+      "targetSymptoms": ["Fatigue", "Stress", "Problèmes cognitifs", "Humeur instable"],
+      "targetGoals": ["Plus d'énergie", "Santé cognitive", "Réduire le stress", "Santé cardiovasculaire"],
+      "effectivenessTiming": "Amélioration de l'énergie en 1-2 semaines, effets optimaux en 1 mois",
+      "optimalDosage": {
+        "range": "100-200% des AJR",
+        "frequency": "quotidienne",
+        "timing": "avec un repas, de préférence le matin"
+      },
+      "bioavailabilityFactors": [
+        "Les formes méthylées (méthylcobalamine, méthylfolate) sont mieux utilisées",
+        "L'absorption peut être réduite par l'alcool et certains médicaments"
+      ],
+      "safetyProfile": {
+        "sideEffects": ["Urine colorée (inoffensif)", "Nausées si pris à jeun"],
+        "contraindications": ["Certaines formes peuvent interagir avec des médicaments"],
+        "safetyRating": 9.5
+      },
+      "scientificEvidence": {
+        "clinicalTrials": 67,
+        "metaAnalyses": 12,
+        "observationalStudies": 35,
+        "qualityOfEvidence": "élevée",
+        "keyStudies": [
+          {
+            "citation": "Kennedy DO, et al. (2016). Effects of high-dose B vitamin complex with vitamin C and minerals on subjective mood and performance in healthy males. Psychopharmacology (Berl), 233(7):1229-1246.",
+            "findings": "Amélioration significative de l'humeur et réduction de la fatigue mentale"
+          },
+          {
+            "citation": "Ford TC, et al. (2019). The effect of a high-dose vitamin B multivitamin supplement on the relationship between brain metabolism and blood biomarkers of oxidative stress: a randomized control trial. Nutrients, 11(11):2551.",
+            "findings": "Amélioration de la performance cognitive et du métabolisme cérébral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "probiotics",
+      "name": "Probiotiques Multi-souches",
+      "category": "Supplément microbien",
+      "description": "Complexe de bactéries bénéfiques pour restaurer et maintenir l'équilibre du microbiome intestinal.",
+      "primaryEffects": [
+        {
+          "effect": "Santé digestive",
+          "strengthOfEvidence": 0.85,
+          "mechanism": "Restauration de la diversité microbienne et régulation de l'inflammation intestinale"
+        },
+        {
+          "effect": "Fonction immunitaire",
+          "strengthOfEvidence": 0.75,
+          "mechanism": "Modulation des réponses immunitaires innées et adaptatives"
+        },
+        {
+          "effect": "Axe intestin-cerveau",
+          "strengthOfEvidence": 0.65,
+          "mechanism": "Production de neurotransmetteurs et régulation de l'inflammation systémique"
+        }
+      ],
+      "targetSymptoms": ["Problèmes digestifs", "Ballonnements", "Immunité faible", "Fatigue", "Humeur basse"],
+      "targetGoals": ["Santé digestive", "Soutien immunitaire", "Santé de la peau", "Détoxification", "Santé cognitive"],
+      "effectivenessTiming": "Améliorations digestives en 1-2 semaines, équilibre complet en 2-3 mois",
+      "optimalDosage": {
+        "range": "10-30 milliards UFC",
+        "frequency": "quotidienne",
+        "timing": "à jeun ou avec un repas léger"
+      },
+      "bioavailabilityFactors": [
+        "La diversité des souches est importante pour des bénéfices étendus",
+        "Les formules entéro-enrobées protègent les bactéries de l'acidité gastrique"
+      ],
+      "safetyProfile": {
+        "sideEffects": ["Ballonnements temporaires initiaux", "Gaz intestinaux"],
+        "contraindications": ["Immunodépression sévère", "Cathéters veineux centraux"],
+        "safetyRating": 9.0
+      },
+      "scientificEvidence": {
+        "clinicalTrials": 89,
+        "metaAnalyses": 14,
+        "observationalStudies": 37,
+        "qualityOfEvidence": "modérée à élevée",
+        "keyStudies": [
+          {
+            "citation": "Zheng et al. (2022). Probiotics for Mood and Sleep Issues in Adults: A Systematic Review and Meta-Analysis of Randomized Controlled Trials. Nutrients, 14(4):719.",
+            "findings": "Améliorations significatives de l'humeur et des paramètres de sommeil"
+          },
+          {
+            "citation": "Chong et al. (2019). The Microbiome and Irritable Bowel Syndrome - A Review on the Pathophysiology, Current Research and Future Therapy. Front Microbiol, 10:1136.",
+            "findings": "Réduction des symptômes digestifs dans le syndrome du côlon irritable"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhodiola",
+      "name": "Rhodiola Rosea",
+      "category": "Adaptogène",
+      "description": "Adaptogène qui améliore la résistance au stress physique et mental, et combat la fatigue.",
+      "primaryEffects": [
+        {
+          "effect": "Anti-fatigue",
+          "strengthOfEvidence": 0.8,
+          "mechanism": "Amélioration de la production d'ATP et stabilisation du stress oxydatif"
+        },
+        {
+          "effect": "Fonction cognitive",
+          "strengthOfEvidence": 0.7,
+          "mechanism": "Modulation des neurotransmetteurs et neuroprotection"
+        },
+        {
+          "effect": "Adaptation au stress",
+          "strengthOfEvidence": 0.75,
+          "mechanism": "Régulation de l'axe HPA et des hormones de stress"
+        }
+      ],
+      "targetSymptoms": ["Fatigue", "Stress", "Épuisement", "Dépression légère"],
+      "targetGoals": ["Plus d'énergie", "Santé cognitive", "Réduire le stress", "Performance physique"],
+      "effectivenessTiming": "Effets énergisants en 1-2 semaines, adaptation complète en 1-2 mois",
+      "optimalDosage": {
+        "range": "200-400mg",
+        "frequency": "1-2 fois par jour",
+        "timing": "de préférence le matin ou avant midi"
+      },
+      "bioavailabilityFactors": [
+        "L'extrait standardisé à 3% de rosavines et 1% de salidroside est recommandé",
+        "L'absorption n'est pas significativement affectée par les aliments"
+      ],
+      "safetyProfile": {
+        "sideEffects": ["Agitation si pris tard dans la journée", "Bouche sèche occasionnelle"],
+        "contraindications": ["Troubles bipolaires", "Certains antidépresseurs (IMAO)"],
+        "safetyRating": 8.7
+      },
+      "scientificEvidence": {
+        "clinicalTrials": 29,
+        "metaAnalyses": 4,
+        "observationalStudies": 16,
+        "qualityOfEvidence": "modérée",
+        "keyStudies": [
+          {
+            "citation": "Olsson et al. (2009). A randomised, double-blind, placebo-controlled, parallel-group study of the standardised extract SHR-5 of the roots of Rhodiola rosea in the treatment of subjects with stress-related fatigue. Planta Med, 75(2):105-12.",
+            "findings": "Réduction significative de la fatigue et amélioration de la fonction cognitive"
+          },
+          {
+            "citation": "Ishaque et al. (2012). Rhodiola rosea for physical and mental fatigue: a systematic review. BMC Complement Altern Med, 12:70.",
+            "findings": "Preuve substantielle pour l'efficacité anti-fatigue"
+          }
+        ]
+      }
+    }
+  ]
+}

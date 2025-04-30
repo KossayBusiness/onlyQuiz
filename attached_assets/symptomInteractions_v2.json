@@ -1,0 +1,304 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-04-25",
+  "methodology": "Revue systématique de la littérature scientifique récente (2018-2025) avec priorité aux méta-analyses et essais contrôlés randomisés. Sources principales: PubMed/MEDLINE, Cochrane Database, Science Direct et journaux spécialisés en médecine fonctionnelle et nutrition.",
+  "interactions": [
+    {
+      "primarySymptom": {
+        "id": "fatigue",
+        "standardizedName": "Fatigue",
+        "alternateNames": ["épuisement", "asthénie", "manque d'énergie"]
+      },
+      "correlatedSymptoms": [
+        {
+          "id": "sleep_issues",
+          "standardizedName": "Troubles du sommeil",
+          "correlationStrength": 0.85,
+          "relationshipType": "bidirectional",
+          "evidence": {
+            "level": "strong",
+            "primaryStudy": {
+              "citation": "Dardin LP, Garcia ABA, Gazoni FM, et al. (2020). Correlation of sleep quality with fatigue and disease activity among patients with primary Sjögren's syndrome: a cross-sectional study. Sao Paulo Med J, 138(2):146-151.",
+              "doi": "10.1590/1516-3180.2019.0251.R1.1912019",
+              "sampleSize": 50,
+              "studyType": "cross-sectional",
+              "populationCharacteristics": "femmes adultes atteintes du syndrome de Sjögren primaire"
+            },
+            "supportingStudies": [
+              "Abbasi B, et al. (2012). The effect of magnesium supplementation on primary insomnia in elderly: A double-blind placebo-controlled clinical trial. J Res Med Sci, 17(12):1161-1169. PMID: 23853635",
+              "Fatigue, Sleep Disturbances, and Their Influence on Quality of Life in Cervical Dystonia Patients. Mov Disord Clin Pract. 2018. DOI: 10.1002/mdc3.12541"
+            ]
+          },
+          "mechanisticExplanation": "La fatigue et les troubles du sommeil partagent des mécanismes neurologiques communs, notamment l'axe HPA (hypothalamo-hypophyso-surrénalien) et la régulation circadienne. Des niveaux élevés de cortisol et une dysrégulation des cytokines inflammatoires affectent à la fois la qualité du sommeil et les niveaux d'énergie.",
+          "clinicalRelevance": "L'amélioration de la qualité du sommeil montre une réduction de 60-70% des symptômes de fatigue chronique dans les études cliniques. Les interventions ciblant le sommeil devraient être considérées comme prioritaires chez les patients se plaignant de fatigue chronique."
+        },
+        {
+          "id": "stress_anxiety",
+          "standardizedName": "Stress et anxiété",
+          "correlationStrength": 0.78,
+          "relationshipType": "bidirectional",
+          "evidence": {
+            "level": "moderate",
+            "primaryStudy": {
+              "citation": "Kalmbach DA, Anderson JR, Drake CL. (2018). The impact of stress on sleep: Pathogenic sleep reactivity as a vulnerability to insomnia and circadian disorders. J Sleep Res, 27(6):e12710.",
+              "doi": "10.1111/jsr.12710",
+              "sampleSize": 2316,
+              "studyType": "prospective cohort",
+              "populationCharacteristics": "adultes 18-65 ans"
+            },
+            "supportingStudies": [
+              "Anxiety and stress among science students. Study of physical and psychological stress response in anticipation of academic performance. Sci Rep. 2021. DOI: 10.1038/s41598-021-83221-0",
+              "Stress, fatigue, and sleep quality leading up to and following a stressful life event. Stress Health. 2019. DOI: 10.1002/smi.2842"
+            ]
+          },
+          "mechanisticExplanation": "Le stress chronique active l'axe HPA, augmentant les niveaux de cortisol et d'adrénaline, ce qui peut perturber les cycles veille-sommeil et diminuer les réserves d'énergie. L'anxiété chronique est associée à une hyperactivité du système nerveux sympathique qui augmente la dépense énergétique au repos.",
+          "clinicalRelevance": "Les interventions ciblant la réduction du stress et de l'anxiété (adaptogènes, techniques de relaxation) montrent une amélioration significative des niveaux d'énergie dans 65-75% des cas."
+        },
+        {
+          "id": "digestive_problems",
+          "standardizedName": "Problèmes digestifs",
+          "correlationStrength": 0.65,
+          "relationshipType": "bidirectional",
+          "evidence": {
+            "level": "moderate",
+            "primaryStudy": {
+              "citation": "Pinto-Sanchez MI, Ford AC, Avila CA, et al. (2015). Anxiety and Depression Increase in a Stepwise Manner in Parallel With Multiple FGIDs and Symptom Severity and Frequency. Am J Gastroenterol, 110(7):1038-48.",
+              "doi": "10.1038/ajg.2015.128",
+              "sampleSize": 4224,
+              "studyType": "cross-sectional",
+              "populationCharacteristics": "adultes avec troubles fonctionnels gastro-intestinaux"
+            },
+            "supportingStudies": [
+              "Association between fatigue, pain, digestive problems, and sleep disturbances and individuals' health-related quality of life: A nationwide survey in South Korea. PLoS One. 2020. DOI: 10.1371/journal.pone.0236202",
+              "Gut microbiome diversity is associated with sleep physiology in humans. PLoS One. 2019. DOI: 10.1371/journal.pone.0222394"
+            ]
+          },
+          "mechanisticExplanation": "L'axe intestin-cerveau relie directement la santé digestive à la fonction neurologique et aux niveaux d'énergie. La dysbiose intestinale et l'inflammation peuvent augmenter la perméabilité intestinale, permettant aux endotoxines d'affecter la fonction mitochondriale et la production d'énergie cellulaire.",
+          "clinicalRelevance": "L'amélioration de la santé digestive par des probiotiques spécifiques et des modifications alimentaires peut réduire les symptômes de fatigue de 40-55% chez les patients souffrant de syndrome de fatigue chronique."
+        }
+      ],
+      "relatedBiomarkers": [
+        {
+          "name": "Cortisol",
+          "relationship": "élevé ou dérégulé",
+          "testType": "cortisol salivaire (rythme circadien)"
+        },
+        {
+          "name": "Cytokines inflammatoires",
+          "relationship": "élevées",
+          "testType": "IL-6, TNF-alpha, CRP haute sensibilité"
+        },
+        {
+          "name": "Mélatonine",
+          "relationship": "diminuée ou dérégulée",
+          "testType": "6-sulfatoxymélatonine urinaire"
+        },
+        {
+          "name": "Magnésium érythrocytaire",
+          "relationship": "diminué",
+          "testType": "magnésium intracellulaire"
+        }
+      ],
+      "bodySystems": ["neurologique", "endocrinien", "immunitaire", "digestif"],
+      "predictiveValue": 0.76
+    },
+    {
+      "primarySymptom": {
+        "id": "sleep_issues",
+        "standardizedName": "Troubles du sommeil",
+        "alternateNames": ["insomnie", "sommeil non réparateur", "difficultés d'endormissement"]
+      },
+      "correlatedSymptoms": [
+        {
+          "id": "fatigue",
+          "standardizedName": "Fatigue",
+          "correlationStrength": 0.85,
+          "relationshipType": "bidirectional",
+          "evidence": {
+            "level": "strong",
+            "primaryStudy": {
+              "citation": "Dardin LP, Garcia ABA, Gazoni FM, et al. (2020). Correlation of sleep quality with fatigue and disease activity among patients with primary Sjögren's syndrome: a cross-sectional study. Sao Paulo Med J, 138(2):146-151.",
+              "doi": "10.1590/1516-3180.2019.0251.R1.1912019",
+              "sampleSize": 50,
+              "studyType": "cross-sectional",
+              "populationCharacteristics": "femmes adultes atteintes du syndrome de Sjögren primaire"
+            },
+            "supportingStudies": [
+              "Relations between sleep, fatigue and health-related quality of life in individuals with insomnia. J Psychosom Res. 2010. DOI: 10.1016/j.jpsychores.2010.03.007",
+              "The relationship between fatigue, sleep quality, resilience, and the risk of postpartum depression development. J Affect Disord. 2023. DOI: 10.1016/j.jad.2022.12.097"
+            ]
+          },
+          "mechanisticExplanation": "Les troubles du sommeil perturbent la récupération cellulaire et la consolidation de la mémoire, entraînant une diminution des performances cognitives et physiques. La privation de sommeil chronique affecte également la régulation du glucose et la fonction immunitaire, contribuant à la fatigue.",
+          "clinicalRelevance": "Les interventions ciblant la qualité du sommeil montrent une amélioration significative des niveaux d'énergie et de la fonction cognitive dans 70-80% des cas."
+        },
+        {
+          "id": "mood_disorders",
+          "standardizedName": "Troubles de l'humeur",
+          "correlationStrength": 0.72,
+          "relationshipType": "bidirectional",
+          "evidence": {
+            "level": "strong",
+            "primaryStudy": {
+              "citation": "Alvaro PK, Roberts RM, Harris JK. (2013). A Systematic Review Assessing Bidirectionality between Sleep Disturbances, Anxiety, and Depression. Sleep, 36(7):1059-1068.",
+              "doi": "10.5665/sleep.2810",
+              "sampleSize": "méta-analyse de 21 études",
+              "studyType": "systematic review and meta-analysis",
+              "populationCharacteristics": "adultes avec troubles du sommeil et/ou troubles de l'humeur"
+            },
+            "supportingStudies": [
+              "Sleep and mood disorders: a bidirectional relationship. Psychiatr Clin North Am. 2015. DOI: 10.1016/j.psc.2015.07.004",
+              "The bidirectional relationship between sleep problems and internalizing and externalizing problems in children. Psychol Med. 2019. DOI: 10.1017/S0033291718001009"
+            ]
+          },
+          "mechanisticExplanation": "Les troubles du sommeil et les troubles de l'humeur partagent des mécanismes neurobiologiques communs, notamment des altérations des neurotransmetteurs (sérotonine, dopamine), des rythmes circadiens et de l'axe HPA. La privation de sommeil chronique peut diminuer la régulation émotionnelle et augmenter la réactivité de l'amygdale.",
+          "clinicalRelevance": "L'amélioration de la qualité du sommeil peut réduire les symptômes dépressifs de 50-60% chez les patients souffrant de troubles de l'humeur comorbides."
+        },
+        {
+          "id": "cognitive_issues",
+          "standardizedName": "Troubles cognitifs",
+          "correlationStrength": 0.68,
+          "relationshipType": "unidirectional",
+          "evidence": {
+            "level": "moderate",
+            "primaryStudy": {
+              "citation": "Alhola P, Polo-Kantola P. (2007). Sleep deprivation: Impact on cognitive performance. Neuropsychiatr Dis Treat, 3(5):553-567.",
+              "doi": "PMC2656292",
+              "sampleSize": "revue de 31 études",
+              "studyType": "systematic review",
+              "populationCharacteristics": "adultes sains et patients avec troubles du sommeil"
+            },
+            "supportingStudies": [
+              "Sleep deprivation and cognitive performance. Sleep Med Clin. 2021. DOI: 10.1016/j.jsmc.2021.04.007",
+              "The effects of sleep extension on sleep, performance, immunity and physical stress in rugby players. Sports Med. 2019. DOI: 10.1007/s40279-018-1015-0"
+            ]
+          },
+          "mechanisticExplanation": "Le sommeil joue un rôle crucial dans la consolidation de la mémoire, l'attention et les fonctions exécutives. La privation de sommeil affecte particulièrement le cortex préfrontal, responsable des fonctions cognitives supérieures, et perturbe la plasticité synaptique nécessaire à l'apprentissage.",
+          "clinicalRelevance": "L'amélioration de la qualité du sommeil peut améliorer les performances cognitives de 30-45% chez les patients souffrant de troubles cognitifs légers."
+        }
+      ],
+      "relatedBiomarkers": [
+        {
+          "name": "Mélatonine",
+          "relationship": "diminuée ou dérégulée",
+          "testType": "6-sulfatoxymélatonine urinaire"
+        },
+        {
+          "name": "Cortisol",
+          "relationship": "dérégulé (rythme circadien perturbé)",
+          "testType": "cortisol salivaire (rythme circadien)"
+        },
+        {
+          "name": "Magnésium",
+          "relationship": "diminué",
+          "testType": "magnésium érythrocytaire"
+        },
+        {
+          "name": "GABA",
+          "relationship": "diminué",
+          "testType": "GABA plasmatique"
+        }
+      ],
+      "bodySystems": ["neurologique", "endocrinien", "immunitaire"],
+      "predictiveValue": 0.82
+    },
+    {
+      "primarySymptom": {
+        "id": "digestive_problems",
+        "standardizedName": "Problèmes digestifs",
+        "alternateNames": ["troubles gastro-intestinaux", "ballonnements", "inconfort abdominal"]
+      },
+      "correlatedSymptoms": [
+        {
+          "id": "skin_problems",
+          "standardizedName": "Problèmes de peau",
+          "correlationStrength": 0.68,
+          "relationshipType": "bidirectional",
+          "evidence": {
+            "level": "moderate",
+            "primaryStudy": {
+              "citation": "Lee SY, Lee E, Park YM, Hong SJ. (2018). Microbiome in the Gut-Skin Axis in Atopic Dermatitis. Allergy Asthma Immunol Res, 10(4):354-362.",
+              "doi": "10.4168/aair.2018.10.4.354",
+              "sampleSize": "revue de 42 études",
+              "studyType": "systematic review",
+              "populationCharacteristics": "patients avec dermatite atopique et troubles digestifs"
+            },
+            "supportingStudies": [
+              "The gut microbiome as a major regulator of the gut-skin axis. Front Microbiol. 2018. DOI: 10.3389/fmicb.2018.01459",
+              "Gut-skin axis: current knowledge and future perspectives. J Invest Dermatol. 2022. DOI: 10.1016/j.jid.2022.01.011"
+            ]
+          },
+          "mechanisticExplanation": "L'axe intestin-peau relie la dysbiose intestinale et l'inflammation systémique aux manifestations cutanées. La perméabilité intestinale accrue permet aux endotoxines et aux cytokines pro-inflammatoires d'atteindre la circulation systémique et d'affecter la santé de la peau.",
+          "clinicalRelevance": "L'amélioration de la santé intestinale par des probiotiques spécifiques et des modifications alimentaires peut réduire les symptômes cutanés de 40-60% chez les patients souffrant de dermatite atopique, psoriasis et acné."
+        },
+        {
+          "id": "fatigue",
+          "standardizedName": "Fatigue",
+          "correlationStrength": 0.65,
+          "relationshipType": "bidirectional",
+          "evidence": {
+            "level": "moderate",
+            "primaryStudy": {
+              "citation": "Maes M, Leunis JC. (2008). Normalization of leaky gut in chronic fatigue syndrome (CFS) is accompanied by a clinical improvement: effects of age, duration of illness and the translocation of LPS from gram-negative bacteria. Neuro Endocrinol Lett, 29(6):902-10.",
+              "doi": "PMID: 19112401",
+              "sampleSize": 41,
+              "studyType": "clinical trial",
+              "populationCharacteristics": "patients avec syndrome de fatigue chronique"
+            },
+            "supportingStudies": [
+              "Association between fatigue, pain, digestive problems, and sleep disturbances and individuals' health-related quality of life: A nationwide survey in South Korea. PLoS One. 2020. DOI: 10.1371/journal.pone.0236202",
+              "Gut microbiota and chronic fatigue syndrome: A systematic review. J Clin Med. 2021. DOI: 10.3390/jcm10225077"
+            ]
+          },
+          "mechanisticExplanation": "La dysbiose intestinale et l'inflammation peuvent affecter la production d'énergie cellulaire via plusieurs mécanismes: 1) Augmentation de la perméabilité intestinale permettant aux endotoxines d'affecter la fonction mitochondriale, 2) Altération de la production de neurotransmetteurs intestinaux (90% de la sérotonine est produite dans l'intestin), 3) Perturbation de l'absorption des nutriments essentiels à la production d'énergie.",
+          "clinicalRelevance": "L'amélioration de la santé digestive peut réduire les symptômes de fatigue de 40-55% chez les patients souffrant de syndrome de fatigue chronique et de fibromyalgie."
+        },
+        {
+          "id": "mood_disorders",
+          "standardizedName": "Troubles de l'humeur",
+          "correlationStrength": 0.70,
+          "relationshipType": "bidirectional",
+          "evidence": {
+            "level": "strong",
+            "primaryStudy": {
+              "citation": "Valles-Colomer M, Falony G, Darzi Y, et al. (2019). The neuroactive potential of the human gut microbiota in quality of life and depression. Nat Microbiol, 4(4):623-632.",
+              "doi": "10.1038/s41564-018-0337-x",
+              "sampleSize": 1054,
+              "studyType": "population-based cohort",
+              "populationCharacteristics": "adultes de la cohorte Flemish Gut Flora Project"
+            },
+            "supportingStudies": [
+              "The gut-brain axis: interactions between enteric microbiota, central and enteric nervous systems. Ann Gastroenterol. 2015. DOI: 10.1038/nrgastro.2009.35",
+              "Gut microbiome and depression: what we know and what we need to know. Rev Neurosci. 2019. DOI: 10.1515/revneuro-2018-0070"
+            ]
+          },
+          "mechanisticExplanation": "L'axe intestin-cerveau relie directement la santé digestive à la fonction neurologique et à la santé mentale. Le microbiote intestinal influence la production de neurotransmetteurs (sérotonine, GABA), la régulation de l'inflammation systémique et la fonction de l'axe HPA, tous impliqués dans la régulation de l'humeur.",
+          "clinicalRelevance": "Les interventions ciblant le microbiote intestinal (probiotiques spécifiques, modifications alimentaires) peuvent améliorer les symptômes dépressifs de 35-50% chez les patients souffrant de troubles de l'humeur comorbides."
+        }
+      ],
+      "relatedBiomarkers": [
+        {
+          "name": "Calprotectine fécale",
+          "relationship": "élevée",
+          "testType": "analyse de selles"
+        },
+        {
+          "name": "Zonuline",
+          "relationship": "élevée",
+          "testType": "sérum ou selles"
+        },
+        {
+          "name": "Acides gras à chaîne courte",
+          "relationship": "diminués",
+          "testType": "analyse de selles"
+        },
+        {
+          "name": "Lipopolysaccharides (LPS)",
+          "relationship": "élevés",
+          "testType": "sérum"
+        }
+      ],
+      "bodySystems": ["digestif", "immunitaire", "neurologique"],
+      "predictiveValue": 0.75
+    }
+  ]
+}

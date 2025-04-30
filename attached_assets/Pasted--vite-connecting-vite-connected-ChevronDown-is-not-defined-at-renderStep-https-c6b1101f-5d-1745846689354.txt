@@ -1,0 +1,50 @@
+[vite] connecting...
+[vite] connected.
+ChevronDown is not defined
+at renderStep (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/src/pages/quiz.tsx:1989:40)
+at QuizPage (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/src/pages/quiz.tsx:4483:19)
+at renderWithHooks (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:11548:26)
+at mountIndeterminateComponent (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:14926:21)
+at beginWork (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:15914:22)
+at HTMLUnknownElement.callCallback2 (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:3674:22)
+at Object.invokeGuardedCallbackDev (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:3699:24)
+at invokeGuardedCallback (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:3733:39)
+at beginWork$1 (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:19765:15)
+at performUnitOfWork (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:19198:20)
+ChevronDown is not defined
+at renderStep (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/src/pages/quiz.tsx:1989:40)
+at QuizPage (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/src/pages/quiz.tsx:4483:19)
+at renderWithHooks (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:11548:26)
+at mountIndeterminateComponent (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:14926:21)
+at beginWork (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:15914:22)
+at HTMLUnknownElement.callCallback2 (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:3674:22)
+at Object.invokeGuardedCallbackDev (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:3699:24)
+at invokeGuardedCallback (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:3733:39)
+at beginWork$1 (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:19765:15)
+at performUnitOfWork (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:19198:20)
+The above error occurred in the <QuizPage> component:
+
+    at QuizPage (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/src/pages/quiz.tsx:276:24)
+    at Route (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=9dca1d62:323:16)
+    at Switch (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=9dca1d62:379:17)
+    at main
+    at div
+    at Router
+    at Provider (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-XIZKKOCE.js?v=9dca1d62:22:15)
+    at TooltipProvider (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=9dca1d62:2216:5)
+    at QueryClientProvider (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=9dca1d62:2805:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+ChevronDown is not defined
+at renderStep (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/src/pages/quiz.tsx:1989:40)
+at QuizPage (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/src/pages/quiz.tsx:4483:19)
+at renderWithHooks (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:11548:26)
+at mountIndeterminateComponent (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:14926:21)
+at beginWork (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:15914:22)
+at beginWork$1 (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:19753:22)
+at performUnitOfWork (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:19198:20)
+at workLoopSync (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:19137:13)
+at renderRootSync (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:19116:15)
+at recoverFromConcurrentError (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=9dca1d62:18736:28)

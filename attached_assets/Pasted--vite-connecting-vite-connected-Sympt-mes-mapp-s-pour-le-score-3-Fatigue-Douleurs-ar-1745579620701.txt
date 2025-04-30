@@ -1,0 +1,120 @@
+[vite] connecting...
+[vite] connected.
+Symptômes mappés pour le score: 
+(3) ["Fatigue", "Douleurs articulaires", "Maux de tête"]
+Objectifs mappés pour le score: 
+(3) ["Plus d'énergie", "Santé digestive", "Vieillissement sain"]
+Génération de 5 recommandations principales pour 4 symptômes et 3 objectifs
+Symptômes du quiz (original): 
+(4) ["fatigue", "joints", "headache", "hair"]
+Symptômes du quiz (mappés): 
+(3) ["Fatigue", "Douleurs articulaires", "Maux de tête"]
+Symptômes ciblés par le supplément: 
+(5) ["Fatigue", "Stress", "Trouble du sommeil", "Crampes musculaires", "Problèmes digestifs"]
+Symptômes correspondants: 
+Array ["Fatigue"]
+Objectifs du quiz (original): 
+(3) ["energy", "Support digestion", "Healthy aging"]
+Objectifs du quiz (mappés): 
+(3) ["Plus d'énergie", "Santé digestive", "Vieillissement sain"]
+Objectifs ciblés par le supplément: 
+(5) ["Améliorer le sommeil", "Réduire le stress", "Plus d'énergie", "Soutien musculaire", "Santé digestive"]
+Objectifs correspondants: 
+(2) ["Plus d'énergie", "Santé digestive"]
+Symptômes du quiz (original): 
+(4) ["fatigue", "joints", "headache", "hair"]
+Symptômes du quiz (mappés): 
+(3) ["Fatigue", "Douleurs articulaires", "Maux de tête"]
+Symptômes ciblés par le supplément: 
+(4) ["Inflammation", "Douleurs articulaires", "Problèmes digestifs", "Fatigue"]
+Symptômes correspondants: 
+(2) ["Douleurs articulaires", "Fatigue"]
+Objectifs du quiz (original): 
+(3) ["energy", "Support digestion", "Healthy aging"]
+Objectifs du quiz (mappés): 
+(3) ["Plus d'énergie", "Santé digestive", "Vieillissement sain"]
+Objectifs ciblés par le supplément: 
+(4) ["Anti-inflammation", "Santé cognitive", "Détoxification", "Soutien immunitaire"]
+Objectifs correspondants: 
+Array []
+Symptômes du quiz (original): 
+(4) ["fatigue", "joints", "headache", "hair"]
+Symptômes du quiz (mappés): 
+(3) ["Fatigue", "Douleurs articulaires", "Maux de tête"]
+Symptômes ciblés par le supplément: 
+(4) ["Fatigue", "Humeur basse", "Faiblesse osseuse", "Immunité faible"]
+Symptômes correspondants: 
+Array ["Fatigue"]
+Objectifs du quiz (original): 
+(3) ["energy", "Support digestion", "Healthy aging"]
+Objectifs du quiz (mappés): 
+(3) ["Plus d'énergie", "Santé digestive", "Vieillissement sain"]
+Objectifs ciblés par le supplément: 
+(4) ["Renforcer les os", "Soutien immunitaire", "Santé cardiovasculaire", "Équilibre hormonal"]
+Objectifs correspondants: 
+Array []
+Symptômes du quiz (original): 
+(4) ["fatigue", "joints", "headache", "hair"]
+Symptômes du quiz (mappés): 
+(3) ["Fatigue", "Douleurs articulaires", "Maux de tête"]
+Symptômes ciblés par le supplément: 
+(5) ["Stress", "Anxiété", "Fatigue", "Inflammation", "Problèmes cognitifs"]
+Symptômes correspondants: 
+Array ["Fatigue"]
+Objectifs du quiz (original): 
+(3) ["energy", "Support digestion", "Healthy aging"]
+Objectifs du quiz (mappés): 
+(3) ["Plus d'énergie", "Santé digestive", "Vieillissement sain"]
+Objectifs ciblés par le supplément: 
+(5) ["Réduire le stress", "Équilibre hormonal", "Plus d'énergie", "Soutien immunitaire", "Santé cognitive"]
+Objectifs correspondants: 
+Array ["Plus d'énergie"]
+Symptômes du quiz (original): 
+(4) ["fatigue", "joints", "headache", "hair"]
+Symptômes du quiz (mappés): 
+(3) ["Fatigue", "Douleurs articulaires", "Maux de tête"]
+Symptômes ciblés par le supplément: 
+(5) ["Problèmes digestifs", "Ballonnements", "Immunité faible", "Fatigue", "Humeur basse"]
+Symptômes correspondants: 
+Array ["Fatigue"]
+Objectifs du quiz (original): 
+(3) ["energy", "Support digestion", "Healthy aging"]
+Objectifs du quiz (mappés): 
+(3) ["Plus d'énergie", "Santé digestive", "Vieillissement sain"]
+Objectifs ciblés par le supplément: 
+(5) ["Santé digestive", "Soutien immunitaire", "Santé de la peau", "Détoxification", "Santé cognitive"]
+Objectifs correspondants: 
+Array ["Santé digestive"]
+Symptômes du quiz (original): 
+(4) ["fatigue", "joints", "headache", "hair"]
+Symptômes du quiz (mappés): 
+(3) ["Fatigue", "Douleurs articulaires", "Maux de tête"]
+Symptômes ciblés par le supplément: 
+(4) ["Fatigue", "Stress", "Problèmes cognitifs", "Humeur instable"]
+Symptômes correspondants: 
+Array ["Fatigue"]
+Objectifs du quiz (original): 
+(3) ["energy", "Support digestion", "Healthy aging"]
+Objectifs du quiz (mappés): 
+(3) ["Plus d'énergie", "Santé digestive", "Vieillissement sain"]
+Objectifs ciblés par le supplément: 
+(4) ["Plus d'énergie", "Santé cognitive", "Réduire le stress", "Santé cardiovasculaire"]
+Objectifs correspondants: 
+Array ["Plus d'énergie"]
+Symptômes du quiz (original): 
+(4) ["fatigue", "joints", "headache", "hair"]
+Symptômes du quiz (mappés): 
+(3) ["Fatigue", "Douleurs articulaires", "Maux de tête"]
+Symptômes ciblés par le supplément: 
+(4) ["Fatigue", "Stress", "Épuisement", "Dépression légère"]
+Symptômes correspondants: 
+Array ["Fatigue"]
+Objectifs du quiz (original): 
+(3) ["energy", "Support digestion", "Healthy aging"]
+Objectifs du quiz (mappés): 
+(3) ["Plus d'énergie", "Santé digestive", "Vieillissement sain"]
+Objectifs ciblés par le supplément: 
+(4) ["Plus d'énergie", "Santé cognitive", "Réduire le stress", "Performance physique"]
+Objectifs correspondants: 
+Array ["Plus d'énergie"]
+Cannot read properties of undefined (reading 'name')

@@ -1,0 +1,94 @@
+{
+  "supplementEfficacy": {
+    "magnesium": {
+      "primaryTargets": ["sleep_issues", "muscle_tension", "fatigue"],
+      "secondaryTargets": ["mood_regulation", "hormonal_balance"],
+      "efficacyScores": {
+        "sleep_issues": 0.65,
+        "fatigue": 0.70,
+        "stress_anxiety": 0.75,
+        "muscle_tension": 0.80
+      },
+      "optimalTiming": "evening",
+      "synergisticWith": ["vitamin_b6", "vitamin_d"],
+      "antagonisticWith": ["calcium_high_dose"],
+      "timeToEffect": {
+        "initial": "3-5 days",
+        "optimal": "3-4 weeks"
+      },
+      "scientificBasis": ["National Geographic, 2024", "Journal of Nutrition, 2022"]
+    },
+    "ashwagandha": {
+      "primaryTargets": ["stress_anxiety", "sleep_issues", "fatigue"],
+      "secondaryTargets": ["concentration", "immunity"],
+      "efficacyScores": {
+        "stress_anxiety": 0.82,
+        "sleep_issues": 0.72,
+        "fatigue": 0.68,
+        "concentration": 0.65
+      },
+      "optimalTiming": "morning_or_evening",
+      "synergisticWith": ["magnesium", "rhodiola"],
+      "antagonisticWith": ["sedatives", "immunosuppressants"],
+      "timeToEffect": {
+        "initial": "1-2 weeks",
+        "optimal": "6-8 weeks"
+      },
+      "scientificBasis": ["NIH, 2024", "Journal of Ethnopharmacology, 2021"]
+    },
+    "vitamin_d3_k2": {
+      "primaryTargets": ["joint_pain", "fatigue", "low_immunity"],
+      "secondaryTargets": ["bone_health", "cardiovascular_health"],
+      "efficacyScores": {
+        "joint_pain": 0.75,
+        "fatigue": 0.65,
+        "low_immunity": 0.80,
+        "bone_health": 0.85
+      },
+      "optimalTiming": "morning_with_fat",
+      "synergisticWith": ["magnesium", "vitamin_a"],
+      "antagonisticWith": ["anticoagulants"],
+      "timeToEffect": {
+        "initial": "2-4 weeks",
+        "optimal": "3-6 months"
+      },
+      "scientificBasis": ["Copmed, 2023", "Journal of Nutrition, 2021"]
+    },
+    "omega3": {
+      "primaryTargets": ["inflammation", "joint_pain", "cardiovascular_health"],
+      "secondaryTargets": ["cognitive_health", "mood_regulation"],
+      "efficacyScores": {
+        "inflammation": 0.78,
+        "joint_pain": 0.72,
+        "cardiovascular_health": 0.80,
+        "cognitive_health": 0.68
+      },
+      "optimalTiming": "with_meals",
+      "synergisticWith": ["vitamin_e", "curcumin"],
+      "antagonisticWith": ["anticoagulants_high_dose"],
+      "timeToEffect": {
+        "initial": "2-4 weeks",
+        "optimal": "2-3 months"
+      },
+      "scientificBasis": ["Scientific Reports, 2019", "Journal of Lipid Research, 2022"]
+    },
+    "probiotics": {
+      "primaryTargets": ["digestive_problems", "bloating", "immunity"],
+      "secondaryTargets": ["skin_health", "mood_regulation"],
+      "efficacyScores": {
+        "digestive_problems": 0.75,
+        "bloating": 0.78,
+        "immunity": 0.70,
+        "intestinal_inflammation": 0.72
+      },
+      "optimalTiming": "before_or_with_meals",
+      "synergisticWith": ["prebiotics", "dietary_fiber"],
+      "antagonisticWith": ["antibiotics"],
+      "timeToEffect": {
+        "initial": "1-2 weeks",
+        "optimal": "1-2 months"
+      },
+      "scientificBasis": ["Inserm, 2021", "Journal of Gastroenterology, 2020"]
+    }
+  }
+}

@@ -1,0 +1,306 @@
+/* Importer les optimisations mobiles */
+@import './styles/mobile-optimizations.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Palette de couleurs biologie naturelle */
+  --color-natural-green: #4a7c59;
+  --color-leaf-green: #8cb369;  
+  --color-moss: #a5be6a;
+  --color-earthy: #c0a878;
+  --color-sand: #e1ca96;
+  --color-bark: #8d6346;
+  --color-berry: #b5446e;
+  --color-sea: #65a7c5;
+  --color-sky: #6fb1e4;
+  --color-lavender: #c3b1e1;
+  
+  /* Palette de dégradés émeraude/teal pour boutons et accents */
+  --gradient-emerald-light: linear-gradient(135deg, #d1fae5, #a7f3d0);
+  --gradient-emerald-medium: linear-gradient(135deg, #34d399, #10b981);
+  --gradient-emerald-strong: linear-gradient(135deg, #059669, #047857);
+  
+  /* Palette de tons naturels pour les cartes et fonds */
+  --gradient-natural-light: linear-gradient(135deg, #f9f7f1, #f7f5ea);
+  --gradient-natural-subtle: linear-gradient(135deg, #f0efe6, #e6e4d9);
+}
+
+body {
+  background-color: #f9f7f1;
+  color: #333;
+}
+
+/* Remplacer les couleurs par défaut par notre palette de biologie naturelle */
+.bg-primary {
+  background-color: var(--color-natural-green) !important;
+}
+
+.text-primary {
+  color: var(--color-natural-green) !important;
+}
+
+.border-primary {
+  border-color: var(--color-natural-green) !important;
+}
+
+/* Remplacer les bleus par des teintes de verts et naturels */
+.bg-blue-100 {
+  background-color: #e0f0e3 !important;
+}
+
+.bg-blue-500, .bg-blue-600 {
+  background-color: var(--color-natural-green) !important;
+}
+
+.text-blue-500, .text-blue-600 {
+  color: var(--color-natural-green) !important;
+}
+
+/* Styles pour les transitions entre les étapes */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+}
+
+/* Personnalisation des composants */
+.checkbox-natural {
+  background-color: var(--color-leaf-green);
+  border-color: var(--color-natural-green);
+}
+
+/* Amélioration des sections et cartes */
+.natural-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  border: 1px solid #e0e0d4;
+  box-shadow: 0 4px 6px rgba(74, 124, 89, 0.05);
+  transition: all 0.3s ease;
+}
+
+.natural-card:hover {
+  box-shadow: 0 6px 12px rgba(74, 124, 89, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Styles pour la prévisualisation des recommandations */
+.recommendation-preview-card {
+  background: var(--gradient-natural-light);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(140, 179, 105, 0.2);
+  box-shadow: 0 4px 12px rgba(74, 124, 89, 0.08);
+  transition: all 0.3s ease;
+}
+
+.recommendation-preview-card:hover {
+  box-shadow: 0 8px 16px rgba(74, 124, 89, 0.12);
+  transform: translateY(-3px);
+}
+
+.recommendation-confidence-bar {
+  height: 0.25rem;
+  background-color: rgba(140, 179, 105, 0.2);
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.recommendation-confidence-bar-fill {
+  height: 100%;
+  background: var(--gradient-emerald-medium);
+  border-radius: 9999px;
+  transition: width 0.5s ease;
+}
+
+/* Bouton flottant pour prévisualisation */
+.preview-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-emerald-medium);
+  color: white;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  cursor: pointer;
+  z-index: 50;
+  transition: all 0.2s ease;
+}
+
+.preview-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4);
+}
+
+.preview-button:active {
+  transform: scale(0.95);
+}
+
+/* Améliorer la barre de progression */
+.progress-bar-natural {
+  height: 0.375rem;
+  background-color: var(--color-sand);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.progress-bar-natural div {
+  height: 100%;
+  background-color: var(--color-leaf-green);
+  border-radius: 1rem;
+  transition: width 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.95); opacity: 0.8; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-10px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.98); }
+  70% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+.animate-pulse-slow {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Gradient text */
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, #3b82f6, #10b981);
+}
+
+/* Pour les boutons */
+.btn-gradient {
+  background-image: linear-gradient(90deg, #3b82f6, #10b981);
+}
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 122 39% 49%;
+  --primary-foreground: 355 100% 100%;
+  --secondary: 36 100% 50%;
+  --secondary-foreground: 240 10% 3.9%;
+  --accent: 60 4.8% 95.9%;
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 20 14.3% 4.1%;
+  --radius: 0.5rem;
+  --sidebar-background: 0 0% 100%;
+  --sidebar-foreground: 20 14.3% 4.1%;
+  --sidebar-primary: 122 39% 49%;
+  --sidebar-primary-foreground: 355 100% 100%;
+  --sidebar-accent: 60 4.8% 95.9%;
+  --sidebar-accent-foreground: 24 9.8% 10%;
+  --sidebar-border: 20 5.9% 90%;
+  --sidebar-ring: 20 14.3% 4.1%;
+  --chart-1: 122 39% 49%;
+  --chart-2: 36 100% 50%;
+  --chart-3: 210 90% 50%;
+  --chart-4: 280 90% 50%;
+  --chart-5: 340 90% 50%;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 122 39% 49%;
+  --primary-foreground: 355 100% 100%;
+  --secondary: 36 100% 50%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-neutral-50 text-neutral-800;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+/* Custom styles */
+.range-slider {
+  @apply w-full h-2 bg-neutral-200 rounded-lg appearance-none cursor-pointer;
+}
+
+.range-slider::-webkit-slider-thumb {
+  @apply appearance-none w-4 h-4 bg-primary rounded-full;
+}
+
+.range-slider::-moz-range-thumb {
+  @apply w-4 h-4 bg-primary border-0 rounded-full;
+}

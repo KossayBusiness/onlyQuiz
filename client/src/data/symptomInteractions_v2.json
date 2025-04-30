@@ -1,0 +1,212 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-04-25",
+  "methodology": "Revue systématique de la littérature scientifique récente (2018-2025) avec priorité aux méta-analyses et essais contrôlés randomisés.",
+  "interactions": [
+    {
+      "primarySymptom": {
+        "id": "fatigue",
+        "standardizedName": "Fatigue",
+        "alternateNames": ["épuisement", "asthénie", "manque d'énergie"]
+      },
+      "correlatedSymptoms": [
+        {
+          "id": "sleep_issues",
+          "standardizedName": "Troubles du sommeil",
+          "correlationStrength": 0.85,
+          "relationshipType": "bidirectional"
+        },
+        {
+          "id": "stress_anxiety",
+          "standardizedName": "Stress et anxiété",
+          "correlationStrength": 0.78,
+          "relationshipType": "bidirectional"
+        },
+        {
+          "id": "digestive_problems",
+          "standardizedName": "Problèmes digestifs",
+          "correlationStrength": 0.65,
+          "relationshipType": "bidirectional"
+        }
+      ],
+      "relatedBiomarkers": [
+        {
+          "name": "Cortisol",
+          "relationship": "élevé ou dérégulé",
+          "testType": "cortisol salivaire (rythme circadien)"
+        },
+        {
+          "name": "Magnésium érythrocytaire",
+          "relationship": "diminué",
+          "testType": "magnésium intracellulaire"
+        }
+      ],
+      "bodySystems": ["neurologique", "endocrinien", "immunitaire", "digestif"],
+      "predictiveValue": 0.76
+    },
+    {
+      "primarySymptom": {
+        "id": "sleep_issues",
+        "standardizedName": "Troubles du sommeil",
+        "alternateNames": ["insomnie", "sommeil non réparateur", "difficultés d'endormissement"]
+      },
+      "correlatedSymptoms": [
+        {
+          "id": "fatigue",
+          "standardizedName": "Fatigue",
+          "correlationStrength": 0.85,
+          "relationshipType": "bidirectional"
+        },
+        {
+          "id": "mood_disorders",
+          "standardizedName": "Troubles de l'humeur",
+          "correlationStrength": 0.72,
+          "relationshipType": "bidirectional"
+        },
+        {
+          "id": "cognitive_issues",
+          "standardizedName": "Troubles cognitifs",
+          "correlationStrength": 0.68,
+          "relationshipType": "unidirectional"
+        }
+      ],
+      "relatedBiomarkers": [
+        {
+          "name": "Mélatonine",
+          "relationship": "diminuée ou dérégulée",
+          "testType": "6-sulfatoxymélatonine urinaire"
+        },
+        {
+          "name": "Magnésium",
+          "relationship": "diminué",
+          "testType": "magnésium érythrocytaire"
+        }
+      ],
+      "bodySystems": ["neurologique", "endocrinien", "immunitaire"],
+      "predictiveValue": 0.82
+    },
+    {
+      "primarySymptom": {
+        "id": "digestive_problems",
+        "standardizedName": "Problèmes digestifs",
+        "alternateNames": ["troubles gastro-intestinaux", "ballonnements", "inconfort abdominal"]
+      },
+      "correlatedSymptoms": [
+        {
+          "id": "skin_problems",
+          "standardizedName": "Problèmes de peau",
+          "correlationStrength": 0.68,
+          "relationshipType": "bidirectional"
+        },
+        {
+          "id": "fatigue",
+          "standardizedName": "Fatigue",
+          "correlationStrength": 0.65,
+          "relationshipType": "bidirectional"
+        },
+        {
+          "id": "immune_function",
+          "standardizedName": "Fonctionnement immunitaire",
+          "correlationStrength": 0.7,
+          "relationshipType": "bidirectional"
+        }
+      ],
+      "relatedBiomarkers": [
+        {
+          "name": "Calprotectine fécale",
+          "relationship": "élevée",
+          "testType": "test fécal"
+        },
+        {
+          "name": "Zonuline",
+          "relationship": "élevée",
+          "testType": "test sanguin"
+        }
+      ],
+      "bodySystems": ["digestif", "immunitaire", "neurologique"],
+      "predictiveValue": 0.75
+    },
+    {
+      "primarySymptom": {
+        "id": "stress_anxiety",
+        "standardizedName": "Stress et anxiété",
+        "alternateNames": ["tension nerveuse", "nervosité", "inquiétude constante"]
+      },
+      "correlatedSymptoms": [
+        {
+          "id": "sleep_issues",
+          "standardizedName": "Troubles du sommeil",
+          "correlationStrength": 0.78,
+          "relationshipType": "bidirectional"
+        },
+        {
+          "id": "fatigue",
+          "standardizedName": "Fatigue",
+          "correlationStrength": 0.78,
+          "relationshipType": "bidirectional"
+        },
+        {
+          "id": "digestive_problems",
+          "standardizedName": "Problèmes digestifs",
+          "correlationStrength": 0.65,
+          "relationshipType": "bidirectional"
+        }
+      ],
+      "relatedBiomarkers": [
+        {
+          "name": "Cortisol",
+          "relationship": "élevé ou dérégulé",
+          "testType": "cortisol salivaire (rythme circadien)"
+        },
+        {
+          "name": "GABA",
+          "relationship": "diminué",
+          "testType": "GABA plasmatique"
+        }
+      ],
+      "bodySystems": ["neurologique", "endocrinien", "digestif"],
+      "predictiveValue": 0.8
+    },
+    {
+      "primarySymptom": {
+        "id": "cognitive_issues",
+        "standardizedName": "Troubles cognitifs",
+        "alternateNames": ["problèmes de concentration", "brouillard mental", "difficultés de mémoire"]
+      },
+      "correlatedSymptoms": [
+        {
+          "id": "sleep_issues",
+          "standardizedName": "Troubles du sommeil",
+          "correlationStrength": 0.68,
+          "relationshipType": "bidirectional"
+        },
+        {
+          "id": "fatigue",
+          "standardizedName": "Fatigue",
+          "correlationStrength": 0.72,
+          "relationshipType": "bidirectional"
+        },
+        {
+          "id": "stress_anxiety",
+          "standardizedName": "Stress et anxiété",
+          "correlationStrength": 0.65,
+          "relationshipType": "bidirectional"
+        }
+      ],
+      "relatedBiomarkers": [
+        {
+          "name": "Homocystéine",
+          "relationship": "élevée",
+          "testType": "test sanguin"
+        },
+        {
+          "name": "Oméga-3 (EPA/DHA)",
+          "relationship": "diminués",
+          "testType": "test sanguin (indice oméga-3)"
+        }
+      ],
+      "bodySystems": ["neurologique", "vasculaire", "métabolique"],
+      "predictiveValue": 0.7
+    }
+  ]
+}

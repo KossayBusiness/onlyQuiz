@@ -1,0 +1,52 @@
+Warning: React has detected a change in the order of Hooks called by ResultsPage. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://reactjs.org/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+1. useState                   useState
+2. useState                   useState
+3. useState                   useState
+4. useState                   useState
+5. useState                   useState
+6. useState                   useState
+7. useEffect                  useEffect
+8. undefined                  useMemo
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    at ResultsPage (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/src/pages/results.tsx?t=1745504297871:876:37)
+    at Route (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=fa5a8b0c:323:16)
+    at Switch (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=fa5a8b0c:379:17)
+    at main
+    at div
+    at Router
+    at Provider (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-XIZKKOCE.js?v=fa5a8b0c:22:15)
+    at TooltipProvider (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=fa5a8b0c:59:5)
+    at QueryClientProvider (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=fa5a8b0c:2805:3)
+    at App
+Rendered more hooks than during the previous render.
+Rendered more hooks than during the previous render.
+The above error occurred in the <ResultsPage> component:
+
+    at ResultsPage (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/src/pages/results.tsx?t=1745504297871:876:37)
+    at Route (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=fa5a8b0c:323:16)
+    at Switch (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=fa5a8b0c:379:17)
+    at main
+    at div
+    at Router
+    at Provider (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-XIZKKOCE.js?v=fa5a8b0c:22:15)
+    at TooltipProvider (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=fa5a8b0c:59:5)
+    at QueryClientProvider (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=fa5a8b0c:2805:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+Rendered more hooks than during the previous render.
+at updateWorkInProgressHook (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=fa5a8b0c:11678:21)
+at updateMemo (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=fa5a8b0c:12199:22)
+at Object.useMemo (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=fa5a8b0c:12726:24)
+at useMemo (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-3TFVT2CW.js?v=fa5a8b0c:1094:29)
+at https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/src/pages/results.tsx?t=1745504297871:1660:33
+at ResultsPage (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/src/pages/results.tsx?t=1745504297871:2062:43)
+at renderWithHooks (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=fa5a8b0c:11548:26)
+at updateFunctionComponent (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=fa5a8b0c:14582:28)
+at beginWork (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=fa5a8b0c:15924:22)
+at beginWork$1 (https://c6b1101f-5dd7-48e8-9e9a-40eeb3676dac-00-2927ck0ijsk8d.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-WERSD76P.js?v=fa5a8b0c:19753:22)

@@ -1,0 +1,46 @@
+{
+  "symptomGoalMatrix": {
+    "fatigue": {
+      "primaryGoals": ["more_energy", "better_sleep", "stress_reduction"],
+      "secondaryGoals": ["improved_immunity", "cognitive_function"],
+      "targetedNutrients": ["B_vitamins", "magnesium", "iron", "CoQ10"],
+      "priorityScore": 9,
+      "scientificBasis": ["National Geographic, 2024", "Journal of Nutrition, 2022"]
+    },
+    "sleep_issues": {
+      "primaryGoals": ["better_sleep", "stress_reduction"],
+      "secondaryGoals": ["more_energy", "mood_balance"],
+      "targetedNutrients": ["magnesium", "melatonin", "L_theanine", "ashwagandha"],
+      "priorityScore": 8,
+      "scientificBasis": ["NIH, 2024", "Journal of Sleep Research, 2021"]
+    },
+    "stress_anxiety": {
+      "primaryGoals": ["stress_reduction", "emotional_balance"],
+      "secondaryGoals": ["better_sleep", "more_energy"],
+      "targetedNutrients": ["adaptogenic_herbs", "magnesium", "L_theanine"],
+      "priorityScore": 8,
+      "scientificBasis": ["NIH, 2021", "Journal of Psychiatric Research, 2020"]
+    },
+    "digestive_problems": {
+      "primaryGoals": ["digestive_comfort", "regular_transit"],
+      "secondaryGoals": ["inflammation_reduction", "improved_immunity"],
+      "targetedNutrients": ["probiotics", "digestive_enzymes", "L_glutamine"],
+      "priorityScore": 7,
+      "scientificBasis": ["Inserm, 2021", "Journal of Gastroenterology, 2020"]
+    },
+    "joint_pain": {
+      "primaryGoals": ["inflammation_reduction", "improved_mobility"],
+      "secondaryGoals": ["better_quality_of_life", "improved_sleep"],
+      "targetedNutrients": ["omega3", "curcumin", "vitamin_d3_k2"],
+      "priorityScore": 7,
+      "scientificBasis": ["Scientific Reports, 2019", "Journal of Rheumatology, 2021"]
+    },
+    "skin_problems": {
+      "primaryGoals": ["skin_health", "inflammation_reduction"],
+      "secondaryGoals": ["improved_immunity", "digestive_health"],
+      "targetedNutrients": ["omega3", "zinc", "probiotics", "vitamin_A"],
+      "priorityScore": 6,
+      "scientificBasis": ["Journal of Dermatology, 2020", "Nutrients, 2021"]
+    }
+  }
+}

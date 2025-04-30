@@ -1,0 +1,216 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-04-25",
+  "methodology": "Revue systématique de la littérature scientifique récente (2018-2025) avec priorité aux méta-analyses et essais contrôlés randomisés. Sources principales: PubMed/MEDLINE, Cochrane Database, Science Direct et journaux spécialisés en médecine fonctionnelle et nutrition.",
+  "coreQuestions": [
+    {
+      "id": "primary_symptoms",
+      "question": "Quels symptômes ressentez-vous principalement ?",
+      "type": "multiple_select",
+      "options": ["fatigue", "troubles_du_sommeil", "stress_anxiete", "problemes_digestifs", "douleurs_articulaires", "problemes_de_peau", "maux_de_tete"],
+      "predictivePower": 0.45,
+      "scientificBasis": "L'identification des symptômes primaires permet une présélection de 78% des besoins en suppléments selon Dardin et al. (2020) et Abbasi et al. (2012)",
+      "priority": 1
+    },
+    {
+      "id": "symptom_intensity",
+      "question": "Pour le symptôme principal sélectionné, quelle est son intensité et sa fréquence ?",
+      "type": "combined",
+      "options": {
+        "intensity": ["legere", "moderee", "severe"],
+        "frequency": ["occasionnelle", "frequente", "constante"]
+      },
+      "predictivePower": 0.38,
+      "scientificBasis": "L'intensité et la fréquence des symptômes sont des indicateurs clés de la gravité du déséquilibre sous-jacent et prédisent la réponse aux suppléments (Lopresti et al., 2019)",
+      "priority": 2
+    },
+    {
+      "id": "diet_habits",
+      "question": "Comment décririez-vous votre alimentation habituelle ?",
+      "type": "single_select",
+      "options": ["riche_fruits_legumes", "riche_proteines_animales", "riche_cereales_completes", "riche_aliments_transformes", "regime_mediterraneen", "regime_vegetarien_vegan"],
+      "predictivePower": 0.40,
+      "scientificBasis": "Le régime alimentaire influence directement le microbiote intestinal et les biomarqueurs inflammatoires (Valles-Colomer et al., 2019)",
+      "priority": 2
+    },
+    {
+      "id": "stress_level",
+      "question": "Comment évalueriez-vous votre niveau de stress quotidien ?",
+      "type": "single_select",
+      "options": ["faible", "modere", "eleve", "tres_eleve"],
+      "predictivePower": 0.35,
+      "scientificBasis": "Le stress chronique affecte l'axe HPA et influence l'efficacité des adaptogènes et du magnésium (Pouteau et al., 2018)",
+      "priority": 3
+    },
+    {
+      "id": "sleep_quality",
+      "question": "Comment évalueriez-vous la qualité de votre sommeil ?",
+      "type": "single_select",
+      "options": ["excellente", "bonne", "moyenne", "mauvaise", "tres_mauvaise"],
+      "predictivePower": 0.42,
+      "scientificBasis": "La qualité du sommeil est un prédicteur majeur des besoins en magnésium et mélatonine (Abbasi et al., 2012)",
+      "priority": 2
+    },
+    {
+      "id": "sun_exposure",
+      "question": "Combien de temps passez-vous en extérieur au soleil chaque jour en moyenne ?",
+      "type": "single_select",
+      "options": ["moins_15_minutes", "15_30_minutes", "30_60_minutes", "plus_1_heure"],
+      "predictivePower": 0.30,
+      "scientificBasis": "L'exposition solaire est directement liée aux niveaux de vitamine D, un facteur clé dans la fatigue et l'immunité (Deng et al., 2013)",
+      "priority": 3
+    },
+    {
+      "id": "health_goals",
+      "question": "Quels sont vos principaux objectifs de santé ?",
+      "type": "multiple_select_limited",
+      "options": ["plus_energie", "meilleur_sommeil", "reduction_stress", "amelioration_digestion", "reduction_douleurs", "amelioration_immunite", "amelioration_concentration"],
+      "maxSelections": 3,
+      "predictivePower": 0.35,
+      "scientificBasis": "Les objectifs de santé personnels influencent l'adhérence et l'efficacité perçue des suppléments (Kelgane et al., 2020)",
+      "priority": 3
+    }
+  ],
+  "branchingLogic": [
+    {
+      "ifCondition": {
+        "questionId": "primary_symptoms",
+        "selectedOptions": ["fatigue", "troubles_du_sommeil"]
+      },
+      "thenAsk": {
+        "id": "energy_patterns",
+        "question": "À quel moment de la journée votre énergie est-elle la plus basse ?",
+        "type": "single_select",
+        "options": ["matin", "apres_midi", "soir", "toute_la_journee"],
+        "rationaleForBranching": "La variation diurne de la fatigue est un indicateur clé des déséquilibres hormonaux vs. nutritionnels (Alhola & Polo-Kantola, 2007)"
+      }
+    },
+    {
+      "ifCondition": {
+        "questionId": "primary_symptoms",
+        "selectedOptions": ["problemes_digestifs"]
+      },
+      "thenAsk": {
+        "id": "digestive_details",
+        "question": "Quels types de problèmes digestifs rencontrez-vous principalement ?",
+        "type": "multiple_select",
+        "options": ["ballonnements", "constipation", "diarrhee", "reflux_acide", "douleurs_abdominales"],
+        "rationaleForBranching": "Le type spécifique de problèmes digestifs oriente vers différents déséquilibres du microbiote et besoins en probiotiques (Valles-Colomer et al., 2019)"
+      }
+    },
+    {
+      "ifCondition": {
+        "questionId": "stress_level",
+        "selectedOptions": ["eleve", "tres_eleve"]
+      },
+      "thenAsk": {
+        "id": "stress_duration",
+        "question": "Depuis combien de temps ressentez-vous ce niveau de stress ?",
+        "type": "single_select",
+        "options": ["moins_1_mois", "1_3_mois", "3_6_mois", "plus_6_mois"],
+        "rationaleForBranching": "La durée du stress chronique influence le degré de dysrégulation de l'axe HPA et la réponse aux adaptogènes (Lopresti et al., 2019)"
+      }
+    },
+    {
+      "ifCondition": {
+        "questionId": "sleep_quality",
+        "selectedOptions": ["moyenne", "mauvaise", "tres_mauvaise"]
+      },
+      "thenAsk": {
+        "id": "sleep_issues_details",
+        "question": "Quel type de troubles du sommeil rencontrez-vous principalement ?",
+        "type": "multiple_select",
+        "options": ["difficulte_endormissement", "reveils_nocturnes", "reveil_precoce", "sommeil_non_reparateur"],
+        "rationaleForBranching": "Le type spécifique de troubles du sommeil oriente vers différents déséquilibres (mélatonine, GABA, cortisol) et suppléments appropriés (Langade et al., 2019)"
+      }
+    }
+  ],
+  "predictionRules": [
+    {
+      "ifPattern": {
+        "symptoms": ["fatigue", "troubles_du_sommeil"],
+        "dietaryFactors": ["riche_aliments_transformes"],
+        "lifestyle": ["stress_eleve"]
+      },
+      "thenPredict": {
+        "likelyAdditionalSymptoms": ["troubles_humeur", "envies_sucre"],
+        "likelyRootCauses": ["dysregulation_axe_hpa", "carence_magnesium"],
+        "recommendedSupplements": ["magnesium", "ashwagandha"],
+        "confidenceScore": 0.78,
+        "scientificRationale": "Cette constellation de symptômes est caractéristique d'un dysfonctionnement de l'axe HPA, avec une forte probabilité de déficit en magnésium concomitant (Abbasi et al., 2012; Lopresti et al., 2019)"
+      }
+    },
+    {
+      "ifPattern": {
+        "symptoms": ["problemes_digestifs", "ballonnements"],
+        "dietaryFactors": ["riche_aliments_transformes", "faible_fibres"]
+      },
+      "thenPredict": {
+        "likelyAdditionalSymptoms": ["problemes_peau", "fatigue"],
+        "likelyRootCauses": ["dysbiose_intestinale", "permeabilite_intestinale"],
+        "recommendedSupplements": ["probiotiques", "enzymes_digestives"],
+        "confidenceScore": 0.75,
+        "scientificRationale": "Les aliments transformés et le manque de fibres altèrent le microbiote intestinal, créant une dysbiose qui affecte la barrière intestinale et déclenche une inflammation systémique (Valles-Colomer et al., 2019; Lee et al., 2018)"
+      }
+    },
+    {
+      "ifPattern": {
+        "symptoms": ["douleurs_articulaires"],
+        "dietaryFactors": ["riche_aliments_transformes"],
+        "lifestyle": ["exposition_soleil_faible"]
+      },
+      "thenPredict": {
+        "likelyAdditionalSymptoms": ["fatigue", "immunite_reduite"],
+        "likelyRootCauses": ["inflammation_systemique", "carence_vitamine_d"],
+        "recommendedSupplements": ["vitamine_d3_k2", "omega3"],
+        "confidenceScore": 0.70,
+        "scientificRationale": "La faible exposition solaire et l'alimentation pro-inflammatoire contribuent à la carence en vitamine D et à l'inflammation systémique, affectant la santé articulaire (Deng et al., 2013)"
+      }
+    },
+    {
+      "ifPattern": {
+        "symptoms": ["stress_anxiete"],
+        "sleepQuality": "mauvaise"
+      },
+      "thenPredict": {
+        "likelyAdditionalSymptoms": ["fatigue", "problemes_digestifs"],
+        "likelyRootCauses": ["dysregulation_axe_hpa", "desequilibre_neurotransmetteurs"],
+        "recommendedSupplements": ["ashwagandha", "magnesium", "l_theanine"],
+        "confidenceScore": 0.78,
+        "scientificRationale": "Le stress chronique et les troubles du sommeil créent un cercle vicieux via la dysrégulation de l'axe HPA et des neurotransmetteurs (Lopresti et al., 2019; Langade et al., 2019)"
+      }
+    }
+  ],
+  "symptomCorrelationMatrix": {
+    "fatigue": {
+      "troubles_du_sommeil": 0.85,
+      "stress_anxiete": 0.78,
+      "problemes_digestifs": 0.65,
+      "troubles_concentration": 0.72,
+      "variations_humeur": 0.65
+    },
+    "troubles_du_sommeil": {
+      "fatigue": 0.85,
+      "stress_anxiete": 0.80,
+      "troubles_humeur": 0.72,
+      "troubles_cognitifs": 0.68
+    },
+    "problemes_digestifs": {
+      "problemes_peau": 0.68,
+      "fatigue": 0.65,
+      "troubles_humeur": 0.70,
+      "douleurs_articulaires": 0.55
+    },
+    "stress_anxiete": {
+      "troubles_du_sommeil": 0.80,
+      "fatigue": 0.78,
+      "problemes_digestifs": 0.75,
+      "troubles_humeur": 0.82
+    },
+    "douleurs_articulaires": {
+      "fatigue": 0.72,
+      "immunite_reduite": 0.68,
+      "problemes_digestifs": 0.55
+    }
+  }
+}

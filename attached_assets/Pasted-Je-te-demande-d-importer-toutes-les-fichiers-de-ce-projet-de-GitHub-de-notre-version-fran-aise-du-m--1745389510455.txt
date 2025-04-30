@@ -1,0 +1,65 @@
+Je te demande d'importer toutes les fichiers de ce projet de GitHub de notre version française du même projet parce que le quiz ne fonctionnait pas comme prévu. Alors je te demande d'importer les mêmes fichiers français de notre projet français pour faire fonctionner le quiz et même l'affichage, tous les détails vraiment comme dans le projet français. Je te demande de faire une checklist, de commencer un par un, sans rien faire de choses à votre créativité, juste tu suis ce que je t'ai donné comme référence, tu vas les implémenter dans notre projet par détails. Tu fais une checklist et tu vérifies que tu as tout implémenté un par un.. Fichiers et chemins de projet de GitHub : https://github.com/KossayBusiness/frenchnatural.git
+src/components/Quiz.tsx : Composant principal du quiz où les étapes sont gérées.
+
+Fonction principale :
+render(): Gère l'affichage des différentes étapes du quiz.
+handleNext(): Gère la navigation entre les étapes.
+handleSubmit(): Gère la soumission finale du quiz.
+src/utils/quizIntegrationService.ts : Intègre les réponses du quiz avec le système de recommandation.
+
+Fonctions :
+getPersonalizedRecommendations(enrichedQuizData: any): Recommendation[]: Gère la génération de recommandations basées sur les réponses du quiz.
+src/data/recommendationMappings.ts : Contient les recommandations en fonction des symptômes et des objectifs.
+
+Données exportées : SYMPTOM_RECOMMENDATIONS, GOAL_RECOMMENDATIONS.
+src/data/supplementCatalog.ts : Catalogue des compléments alimentaires.
+
+Exportation : SUPPLEMENT_CATALOG
+src/utils/recommenderSystem.ts : Système de recommandation qui traite les données du quiz.
+
+Fonction principale :
+getRecommendations(quizResponses: QuizResponses): Recommendation[]: Analyse les réponses et recommande les compléments.
+src/utils/recommendation_algorithm.ts : Implémente la logique d'algorithme pour les recommandations.
+
+Fonction principale :
+getRecommendations(quizResponses): Récupère les recommandations finales basées sur les scores.
+src/utils/types.ts : Définition des types utilisés dans le système.
+
+Types exportés : QuizData, Recommendation, etc.
+src/components/QuizResults.tsx : Gère l'affichage des résultats des recommandations après l'évaluation des réponses.
+
+Fonction principale :
+renderResults(recommendations): Affiche les résultats après traitement.
+Flux de fonctionnement du quiz
+Saisie des réponses (Input) :
+
+L'utilisateur répond aux questions du Quiz.tsx, qui collecte les réponses et les stocke dans un état local.
+Traitement des données :
+
+Les réponses sont envoyées à quizIntegrationService.ts avec getPersonalizedRecommendations().
+Les recommandations sont générées à partir de recommendationMappings.ts et supplementCatalog.ts en croisent les symptômes et objectifs.
+Analyse des recommandations :
+
+recommenderSystem.ts appelle getRecommendations() pour évaluer les réponses du quiz avec les catalogues de suppléments.
+Le score est attribué en fonction des symptômes et objectifs.
+Affichage des résultats :
+
+Les résultats sont affichés dans le composant QuizResults.tsx une fois les recommandations générées.
+Documentation des fonctions et des appels
+Quiz.tsx :
+
+Appelle handleNext() pour passer à la prochaine étape.
+Appelle handleSubmit() pour finaliser le quiz.
+quizIntegrationService.ts :
+
+getPersonalizedRecommendations(): Transforme les données du quiz en recommandations personnalisées et les retourne.
+recommenderSystem.ts :
+
+getRecommendations(): Applique la logique d'évaluation des réponses et renvoie les recommandations.
+recommendation_algorithm.ts :
+
+getRecommendations(): Se base sur les scores et normalise ceux-ci pour fournir des pourcentages d'efficacité des suppléments.
+Points importants
+Tous les fichiers interagissent entre eux par import/export pour traiter et afficher les recommandations personnalisées.
+Les types sont fortement typés grâce à TypeScript, ce qui aide à éviter les erreurs de type lors du développement.
+Cette documentation devrait aider votre équipe de développement à comprendre le fonctionnement du quiz et les différents composants qui le soutiennent.

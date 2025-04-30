@@ -1,0 +1,116 @@
+{
+  "symptomInteractions": [
+    {
+      "primarySymptom": "fatigue",
+      "interactingSymptoms": [
+        {
+          "symptom": "sleep_issues",
+          "correlationStrength": 0.85,
+          "bidirectional": true,
+          "studyReferences": ["Archives des Maladies Professionnelles et de l'Environnement, 2018"],
+          "likelyRootCauses": ["stress chronique", "carences nutritionnelles", "dysbiose intestinale"]
+        },
+        {
+          "symptom": "stress_anxiety",
+          "correlationStrength": 0.78,
+          "bidirectional": true,
+          "studyReferences": ["NIH, 2021"],
+          "likelyRootCauses": ["déséquilibre hormonal", "inflammation chronique"]
+        },
+        {
+          "symptom": "concentration_issues",
+          "correlationStrength": 0.72,
+          "bidirectional": false,
+          "studyReferences": ["Journal of Sleep Research, 2020"],
+          "likelyRootCauses": ["privation de sommeil", "stress oxydatif"]
+        }
+      ],
+      "biomarkers": ["cortisol", "vitamine B12", "fer", "magnésium"],
+      "bodySystemsAffected": ["hormonal", "neurologique", "immunitaire"]
+    },
+    {
+      "primarySymptom": "digestive_problems",
+      "interactingSymptoms": [
+        {
+          "symptom": "bloating",
+          "correlationStrength": 0.82,
+          "bidirectional": true,
+          "studyReferences": ["Inserm, 2021"],
+          "likelyRootCauses": ["dysbiose intestinale", "intolérance alimentaire", "stress chronique"]
+        },
+        {
+          "symptom": "skin_problems",
+          "correlationStrength": 0.68,
+          "bidirectional": false,
+          "studyReferences": ["Journal of Dermatology, 2019"],
+          "likelyRootCauses": ["inflammation systémique", "perméabilité intestinale accrue"]
+        }
+      ],
+      "biomarkers": ["calprotectine fécale", "zonuline", "acides gras à chaîne courte"],
+      "bodySystemsAffected": ["digestif", "immunitaire", "neurologique"]
+    },
+    {
+      "primarySymptom": "stress_anxiety",
+      "interactingSymptoms": [
+        {
+          "symptom": "sleep_issues",
+          "correlationStrength": 0.80,
+          "bidirectional": true,
+          "studyReferences": ["Journal of Psychiatric Research, 2020"],
+          "likelyRootCauses": ["hyperactivité du système nerveux sympathique", "déséquilibre des neurotransmetteurs"]
+        },
+        {
+          "symptom": "digestive_problems",
+          "correlationStrength": 0.75,
+          "bidirectional": true,
+          "studyReferences": ["Gut Microbiome Research, 2022"],
+          "likelyRootCauses": ["axe intestin-cerveau perturbé", "inflammation systémique"]
+        }
+      ],
+      "biomarkers": ["cortisol", "GABA", "sérotonine"],
+      "bodySystemsAffected": ["neurologique", "hormonal", "digestif"]
+    },
+    {
+      "primarySymptom": "joint_pain",
+      "interactingSymptoms": [
+        {
+          "symptom": "fatigue",
+          "correlationStrength": 0.72,
+          "bidirectional": false,
+          "studyReferences": ["Rheumatology International, 2021"],
+          "likelyRootCauses": ["inflammation systémique", "carence en vitamine D"]
+        },
+        {
+          "symptom": "low_immunity",
+          "correlationStrength": 0.68,
+          "bidirectional": false,
+          "studyReferences": ["Journal of Immunology, 2019"],
+          "likelyRootCauses": ["inflammation chronique", "déséquilibre du système immunitaire"]
+        }
+      ],
+      "biomarkers": ["CRP", "IL-6", "TNF-α", "vitamine D"],
+      "bodySystemsAffected": ["musculo-squelettique", "immunitaire"]
+    },
+    {
+      "primarySymptom": "skin_problems",
+      "interactingSymptoms": [
+        {
+          "symptom": "digestive_problems",
+          "correlationStrength": 0.70,
+          "bidirectional": true,
+          "studyReferences": ["Journal of Dermatology, 2020"],
+          "likelyRootCauses": ["dysbiose intestinale", "perméabilité intestinale accrue"]
+        },
+        {
+          "symptom": "stress_anxiety",
+          "correlationStrength": 0.65,
+          "bidirectional": true,
+          "studyReferences": ["Psychodermatology Research, 2021"],
+          "likelyRootCauses": ["déséquilibre hormonal", "inflammation"]
+        }
+      ],
+      "biomarkers": ["IL-17", "IL-22", "IL-23", "histamine", "cortisol"],
+      "bodySystemsAffected": ["immunitaire", "hormonal", "digestif"]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "predictiveRules": [
+    {
+      "if": {
+        "symptoms": ["fatigue", "sleep_issues"],
+        "intensity": "moderate_to_severe",
+        "stressLevel": "high"
+      },
+      "then": {
+        "likelyAdditionalSymptoms": ["concentration_issues", "mood_swings"],
+        "skipQuestions": ["protein_consumption", "activity_level_details"],
+        "suggestSupplements": ["magnesium", "adaptogen_herbs"],
+        "probabilityScore": 0.82,
+        "scientificBasis": ["Corrélation entre fatigue, troubles du sommeil et stress chronique", "NIH, 2021", "Archives des Maladies Professionnelles, 2018"]
+      }
+    },
+    {
+      "if": {
+        "symptoms": ["digestive_problems", "bloating"],
+        "dietType": "high_processed_foods"
+      },
+      "then": {
+        "likelyAdditionalSymptoms": ["skin_problems", "low_immunity"],
+        "skipQuestions": ["vitamin_preferences", "supplement_history"],
+        "suggestSupplements": ["probiotics", "digestive_enzymes"],
+        "probabilityScore": 0.75,
+        "scientificBasis": ["Lien entre dysbiose intestinale, inflammation et problèmes de peau", "Inserm, 2021", "Journal of Gastroenterology, 2020"]
+      }
+    },
+    {
+      "if": {
+        "symptoms": ["joint_pain"],
+        "sunExposure": "low"
+      },
+      "then": {
+        "likelyAdditionalSymptoms": ["fatigue", "low_immunity"],
+        "skipQuestions": ["sleep_details", "stress_management_techniques"],
+        "suggestSupplements": ["vitamin_d3_k2", "omega3"],
+        "probabilityScore": 0.70,
+        "scientificBasis": ["Association entre carence en vitamine D, douleurs articulaires et fatigue", "Copmed, 2023", "Scientific Reports, 2019"]
+      }
+    },
+    {
+      "if": {
+        "symptoms": ["stress_anxiety"],
+        "sleepQuality": "poor"
+      },
+      "then": {
+        "likelyAdditionalSymptoms": ["fatigue", "digestive_problems"],
+        "skipQuestions": ["detailed_diet_questions", "exercise_routine"],
+        "suggestSupplements": ["ashwagandha", "magnesium", "l_theanine"],
+        "probabilityScore": 0.78,
+        "scientificBasis": ["Impact du stress chronique sur le sommeil et la digestion", "NIH, 2024", "Journal of Psychiatric Research, 2020"]
+      }
+    },
+    {
+      "if": {
+        "symptoms": ["skin_problems"],
+        "dietType": "high_processed_foods"
+      },
+      "then": {
+        "likelyAdditionalSymptoms": ["digestive_problems", "inflammation"],
+        "skipQuestions": ["sleep_details", "stress_management_techniques"],
+        "suggestSupplements": ["omega3", "probiotics", "zinc"],
+        "probabilityScore": 0.68,
+        "scientificBasis": ["Lien entre alimentation transformée, dysbiose intestinale et problèmes de peau", "Journal of Dermatology, 2020", "Nutrients, 2021"]
+      }
+    }
+  ]
+}
